@@ -7,8 +7,8 @@
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
   background-color: $background-color;
-  border-top: 5px solid $border-color-03;
-  border-bottom: 1px solid $border-color-01;
+  // border-top: 5px solid $border-color-03;
+  // border-bottom: 1px solid $border-color-01;
 }
 
 .site-title {
@@ -17,6 +17,8 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  max-width: 300px;
+  margin-top: 15px;
 
   @include media-query($on-palm) {
     padding-right: 45px;
@@ -30,8 +32,10 @@
 
 .site-nav {
   float: right;
+  text-align: center;
   border: none;
   background-color: inherit;
+  margin-top: 65px;
 
   label[for="nav-trigger"], #nav-trigger {
     display: none;
@@ -39,6 +43,7 @@
 
   .nav-item {
     color: $text-color;
+
     &:not(:last-child) {
       margin-right: $spacing-unit * 0.5;
     }
@@ -52,6 +57,7 @@
     border: 1px solid $border-color-01;
     border-radius: 5px;
     text-align: right;
+    margin-top: 0;
 
     label[for="nav-trigger"] {
       display: block;
@@ -123,7 +129,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $border-color-01;
+  // border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
 }
 
@@ -202,7 +208,7 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit * 2 0;
   flex: 1 0 auto;
 }
 
@@ -242,7 +248,7 @@
   margin-bottom: $spacing-unit;
   padding-bottom: 18px;
   text-align: center;
-  border-bottom: 1px solid $border-color-01;
+  // border-bottom: 1px solid $border-color-01;
 }
 
 .post-meta {
