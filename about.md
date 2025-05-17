@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![My Portrait](../assets/images/autoretrato.jpeg)
+![My Portrait](../assets/images/autoretrato.jpg)
 
 <br>
 

@@ -2,11 +2,18 @@
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
 
-body {
-  background-color: rgb(244, 233, 219);
+body { 
+  background-color: rgb(247, 236, 223);
 }
 
-
+.home-title {
+  color: rgb(32, 69, 25);
+  font-family: "andale-mono-mt-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin: 80px 0;
+}
 
 // welcome div
 
@@ -25,16 +32,30 @@ body {
 }
 
 .welcome-title {
-  text-align: end;
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
+  font-family: "formiga", sans-serif;
+  font-weight: 900;
   font-style: normal;
-  font-size: 8vw;
-  margin-right: -10vw;
+
+  text-align: end;
+  font-size: 6vw;
+  margin-right: -12vw;
   z-index: 1;
-  color: rgb(14, 70, 18);
+  color: rgb(32, 69, 25);
 }
 
 .welcome-photo {
   margin-right: 200px;
+}
+
+
+// Jobs home page
+
+.different-jobs {
+  display: flex;
+}
+
+.job {
+  flex: 1;
+  margin: 0 20px;
+  text-align: center;
 }
