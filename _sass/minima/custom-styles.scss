@@ -1,2 +1,40 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+
+body {
+  background-color: rgb(244, 233, 219);
+}
+
+
+
+// welcome div
+
+.welcome-container {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-item {
+  width: 100%;
+}
+
+.welcome-title {
+  text-align: end;
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8vw;
+  margin-right: -10vw;
+  z-index: 1;
+  color: rgb(14, 70, 18);
+}
+
+.welcome-photo {
+  margin-right: 200px;
+}
