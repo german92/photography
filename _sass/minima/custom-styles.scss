@@ -4,6 +4,12 @@
 
 body { 
   background-color: rgb(247, 236, 223);
+  color: rgb(32, 69, 25);
+  font-family: "andale-mono-mt-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  // text-align: center;
+  margin: 80px 0;
 }
 
 .home-title {
@@ -58,4 +64,25 @@ body {
   flex: 1;
   margin: 0 20px;
   text-align: center;
+}
+
+// Process Section Home
+
+.process-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.process-container > div {
+  margin: 10px 10px;
+}
+
+.process-photo {
+  max-width: 400px;
+}
+
+.process-description {
+  align-self: flex-end;
+  max-width: 250px;
 }

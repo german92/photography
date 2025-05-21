@@ -46,13 +46,28 @@ layout: base
 
   <h1 class="home-title">Procesos</h1>
 
+    <div class="process-container">
 
-<!--   
+    <div class="process-photo">
+      <img src=" {{ site.imagepath }}/home/welcome-2.jpg " alt="Portrait Photo">
+    </div>
 
-  {{ content }}
+    <div class="process-description">
+      <p>
+        Sesiones y espacios personalizados a las necesidades de los clientes. 
+      </p>
+    </div>
+
+  </div>
 
 
-  {% if site.paginate %}
+  <h1 class="home-title">Contacto</h1>
+  <i class="fa-regular fa-envelope"></i>
+
+  <!-- {{ content }} -->
+
+
+  <!-- {% if site.paginate %}
     {% assign posts = paginator.posts %}
   {% else %}
     {% assign posts = site.posts %}

@@ -79,6 +79,9 @@ minima:
 #       * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
 #       * url      Full URL of social profile.
   social_links:
+    - title: Email
+      icon: inbox
+      url: "mailto:german92@gmail.com"    
     - title: germanosta.photo
       icon: instagram
       url: "https://instagram.com/germanosta.photo/"
