@@ -5,8 +5,8 @@ title: German Ostaszynski
 tagline: Photography
 
 author:
-  name: German Ostaszysnki
-  # email: your-email@domain.com
+  name: German Ostaszynski
+  email: german92@gmail.com
 #
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
@@ -79,12 +79,12 @@ minima:
 #       * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
 #       * url      Full URL of social profile.
   social_links:
-    - title: Email
-      icon: inbox
-      url: "mailto:german92@gmail.com"    
-    - title: germanosta.photo
+    - title: Instagram page
       icon: instagram
       url: "https://instagram.com/germanosta.photo/"
+    - title:  Linkedin page
+      icon: linkedin
+      url: "https://www.linkedin.com/in/german92/"
 #     - title: Minima Theme repository at GitHub
 #       icon: github
 #       url: "https://github.com/jekyll/minima"

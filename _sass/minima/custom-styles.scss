@@ -18,7 +18,7 @@ body {
   font-weight: 400;
   font-style: normal;
   text-align: center;
-  margin: 80px 0;
+  margin: 80px 0 40px;
 }
 
 // welcome div
@@ -28,7 +28,8 @@ body {
   position: relative;
   margin-left: -50vw;
   left: 50%;
-  margin-bottom: 50px;
+  margin-top: 3vw;
+  margin-bottom: 5vw;
   display: flex;
   align-items: center;
 }
@@ -42,11 +43,13 @@ body {
   font-weight: 900;
   font-style: normal;
 
-  text-align: end;
-  font-size: 6vw;
-  margin-right: -12vw;
+  text-align: center;
+  white-space: pre;
+  font-size: 5.5vw;
+  margin-right: -15vw;
   z-index: 1;
   color: rgb(32, 69, 25);
+  line-height: 1em;
 }
 
 .welcome-photo {
@@ -64,6 +67,20 @@ body {
   flex: 1;
   margin: 0 20px;
   text-align: center;
+}
+
+.job p{
+  padding-top: 5px;
+}
+
+.job a{
+  color: rgb(32, 69, 25);
+}
+
+.job a:hover {
+  opacity: 0.5;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
 // Process Section Home
@@ -85,4 +102,22 @@ body {
 .process-description {
   align-self: flex-end;
   max-width: 250px;
+}
+
+// Contact Section Home
+
+.contact-container {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container a {
+  padding: 0px 20px;
+  color: rgb(32, 69, 25);
+}
+
+.contact-container a:hover {
+  padding: 0px 20px;
+  color: rgb(101, 123, 96);
 }
