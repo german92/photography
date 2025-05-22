@@ -21,7 +21,7 @@ layout: base
     {%- if post.categories contains "work" -%}
       <div class="flex-item"> 
         <a href="{{ post.url }}">
-          <img src="{{ site.imagepath }}{{ post.thumbnail }}" alt="{{ post.title }}">
+          <img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="{{ post.title }}">
           {{ post.title }}
         </a>
       </div>
@@ -38,7 +38,7 @@ layout: base
     {%- if post.categories contains "projects" -%}
       <div class="flex-item"> 
         <a href="{{ post.url }}">
-          <img src="{{ site.imagepath }}{{ post.thumbnail }}" alt="{{ post.title }}">
+          <img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="{{ post.title }}">
           {{ post.title }}
         </a>
       </div>

@@ -2,7 +2,7 @@
 layout: post
 title: Inner Thoughts
 categories: projects
-thumbnail: "/projects/doble-exposicion/doble-exposicion-1.jpg"
+thumbnail: "/assets/images/projects/doble-exposicion/doble-exposicion-1.jpg"
 ---
 
 

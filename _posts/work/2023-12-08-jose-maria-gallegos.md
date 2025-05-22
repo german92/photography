@@ -2,7 +2,7 @@
 layout: post
 title: José María Gallegos
 categories: work portrait
-thumbnail: "/work/portrait/chema/chema-7.jpg"
+thumbnail: "/assets/images/work/portrait/chema/chema-7.jpg"
 ---
 
 

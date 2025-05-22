@@ -2,7 +2,7 @@
 layout: post
 title: Lifeguard Towers
 categories: projects
-thumbnail: "/projects/lifeguard/lifeguard-1.jpg"
+thumbnail: "/assets/images/projects/lifeguard/lifeguard-1.jpg"
 ---
 
 
