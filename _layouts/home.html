@@ -7,7 +7,7 @@ layout: base
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <div class="welcome-container">
+  <!-- <div class="welcome-container">
     <div class="welcome-item welcome-title">
       <p>eventos &<br>                       retratos.</p>
     </div>
@@ -15,27 +15,42 @@ layout: base
     <div class="welcome-item welcome-photo">
       <img src=" {{ site.imagepath }}/home/welcome-photo.jpg " alt="Wedding Photo">
     </div>
+  </div> -->
+
+  <br><br>
+  <div class="flex-container">
+
+    <div class="flex-photo">
+      <img src=" {{ site.imagepath }}/home/welcome-photo.jpg " alt="Film">
+    </div>
+
+    <div class="flex-description">
+      <p>
+        Fotografía de eventos, retrato y producto.
+      </p>
+    </div>
+
   </div>
 
-  <h1 class="home-title">Trabajos</h1>
+  <h2 class="home-title">Trabajos</h2>
 
-  <div class="different-jobs">
+  <div class="flex-container">
 
-    <div class="job">
+    <div class="flex-item">
       <a href="{{site.baseirl}}/gallery">
         <img src=" {{ site.imagepath }}/home/wedding-2.jpg " alt="Wedding">
         <p><b>Bodas</b></p>
       </a>
     </div>
 
-    <div class="job">
+    <div class="flex-item">
       <a href="{{site.baseirl}}/gallery">
         <img src=" {{ site.imagepath }}/home/tali.jpg " alt="Portrait Tali">
         <p><b>Retratos</b></p>
       </a>
     </div>
 
-    <div class="job">
+    <div class="flex-item">
       <a href="{{site.baseirl}}/gallery">
         <img src=" {{ site.imagepath }}/projects/ocean-1.jpg " alt="Ocean">
         <p><b>Proyectos Personales</b></p>
@@ -45,24 +60,24 @@ layout: base
 
   </div>
 
-  <h1 class="home-title">Darkroom & Film Lab</h1>
+  <h2 class="home-title">Darkroom & Film Lab</h2>
 
-    <div class="process-container">
+    <div class="flex-container">
 
-    <div class="process-photo">
-      <img src=" {{ site.imagepath }}/film-dry.jpg " alt="Film">
+      <div class="flex-description">
+        <p>
+          Servicio de revelado de rollos blanco y negro y capacitaciones en cuarto oscuro.
+        </p>
+      </div>
+
+      <div class="flex-photo">
+        <img src=" {{ site.imagepath }}/film-dry.jpg " alt="Film">
+      </div>
+
     </div>
 
-    <div class="process-description">
-      <p>
-        Servicio de revelado de rollos blanco y negro y capacitaciones en cuarto oscuro.
-      </p>
-    </div>
 
-  </div>
-
-
-  <h1 class="home-title">Contacto</h1>
+  <h2 class="home-title">Contacto</h2>
   <h2>¿Tiene una idea, propuesta o simplemente quiere conectar? Estoy a un mensaje de distancia.</h2>
 
   <div class="contact-container">

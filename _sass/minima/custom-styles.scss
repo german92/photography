@@ -8,8 +8,6 @@ body {
   font-family: "andale-mono-mt-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
-  // text-align: center;
-  margin: 80px 0;
 }
 
 .home-title {
@@ -21,95 +19,73 @@ body {
   margin: 80px 0 40px;
 }
 
-// welcome div
-
-.welcome-container {
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  left: 50%;
-  margin-top: 3vw;
-  margin-bottom: 5vw;
-  display: flex;
-  align-items: center;
-}
-
-.welcome-item {
-  width: 100%;
-}
-
-.welcome-title {
-  font-family: "formiga", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-
-  text-align: center;
-  white-space: pre;
-  font-size: 5.5vw;
-  margin-right: -15vw;
-  z-index: 1;
-  color: rgb(32, 69, 25);
-  line-height: 1em;
-}
-
-.welcome-photo {
-  margin-right: 10%;
-}
-
 
 // Jobs home page
 
-.different-jobs {
+.flex-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 800px) {
-  .different-jobs {
-    flex-direction: column;
-  }
-}
-
-.job {
-  flex: 1;
-  margin: 0 20px;
-  min-width: 199px;
+.flex-item {
+  width: 33.33%; /* 100% / 3 items per row */
+  box-sizing: border-box;
+  padding: 10px; /* optional spacing */
   text-align: center;
 }
 
-.job p{
+/* Tablets: 2 per row */
+@media (max-width: 900px) {
+  .flex-item {
+    flex: 0 0 calc((100% - 16px) / 2); /* 2 per row */
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 600px) {
+  .flex-item {
+    flex: 0 0 100%; /* 1 per row */
+  }
+}
+
+.flex-item p{
   padding-top: 5px;
 }
 
-.job a{
+.flex-item a{
   color: rgb(32, 69, 25);
 }
 
-.job a:hover {
+.flex-item a:hover {
   opacity: 0.5;
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
 }
 
-// Process Section Home
+// Darkroom Section Home
 
-.process-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.flex-photo {
+  width: 85%;
+  box-sizing: border-box;
+  padding: 10px; /* optional spacing */
+  // text-align: center;
 }
 
-.process-container > div {
-  margin: 10px 10px;
-}
-
-.process-photo {
-  max-width: 600px;
-}
-
-.process-description {
+.flex-description {
+  width: 15%;
+  box-sizing: border-box;
+  padding: 10px;
   align-self: flex-end;
-  max-width: 200px;
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 900px) {
+  .flex-photo {
+    flex: 0 0 100%; /* 1 per row */
+  }
+  .flex-description {
+    width: 30%;
+  }
 }
 
 // Contact Section Home

@@ -1,26 +1,29 @@
 ---
 layout: post
-title: Inner Thoughts
+title: Lifeguard Towers
 categories: projects
-thumbnail: "/projects/doble-exposicion-1.jpg"
+thumbnail: "/projects/lifeguard-1.jpg"
 ---
 
 
-![Inner Thoughts One](/assets/images/projects/doble-exposicion-1.jpg)
+![Lifeguard Towers One](/assets/images/projects/lifeguard-1.jpg)
 
-![Inner Thoughts Two](/assets/images/projects/doble-exposicion-2.jpg)
+![Lifeguard Towers Tow](/assets/images/projects/lifeguard-2.jpg)
 
-![Inner Thoughts Three](/assets/images/projects/doble-exposicion-3.jpg)
+![Lifeguard Towers Three](/assets/images/projects/lifeguard-3.jpg)
 
-![Inner Thoughts Four](/assets/images/projects/doble-exposicion-4.jpg)
+![Lifeguard Towers Four](/assets/images/projects/lifeguard-4.jpg)
 
-![Inner Thoughts Five](/assets/images/projects/doble-exposicion-5.jpg)
+![Lifeguard Towers Five](/assets/images/projects/lifeguard-5.jpg)
+
+
 
 <br>
-**Reflexiones Internas**<br>
-Este proyecto fue creado como resultado de una exploracion de sentimientos y pensamientos internos y la técnica de doble exposición.
+**Salva Vidas**<br>
+Este proyecto fue creado como resultado de la exploración de las torres salvavidas en South Beach, Miami. Estas fotos son una reflexión sobre nuestra necesidad de buscar algo que nos salve o ayuden.
 
 
-Double Exposición. Digital. <br>
+Architectural photography. Digital. <br>
+South Beach, Miami, FL, USA  <br>
 2023
 
