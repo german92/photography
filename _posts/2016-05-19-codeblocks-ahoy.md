@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: event work
 ---
 
 An article with various blocks of highlighted code snippets.

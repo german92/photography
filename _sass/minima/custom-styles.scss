@@ -61,11 +61,19 @@ body {
 
 .different-jobs {
   display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .different-jobs {
+    flex-direction: column;
+  }
 }
 
 .job {
   flex: 1;
   margin: 0 20px;
+  min-width: 199px;
   text-align: center;
 }
 
@@ -96,12 +104,12 @@ body {
 }
 
 .process-photo {
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .process-description {
   align-self: flex-end;
-  max-width: 250px;
+  max-width: 200px;
 }
 
 // Contact Section Home

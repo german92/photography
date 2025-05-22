@@ -13,10 +13,36 @@ layout: base
 
 </article>
 
-
 <h2 class="home-title">Bodas y Eventos</h2>
+
+  {%- for post in site.posts -%}
+    {%- if post.categories contains "work" -%}
+      <div class="gallery-post job"> 
+        <a href="{{ post.url }}">
+          <img src="{{ site.imagepath }}{{ post.thumbnail }}" alt="{{ post.title }}">
+          {{ post.title }}
+        </a>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+
 <h2 class="home-title">Retrato</h2>
 <h2 class="home-title">Producto</h2>
-<h2 class="home-title">Arte Conceptual</h2>
-<h2 class="home-title">Street Photo</h2>
 
+<h2 class="home-title">Proyectos Personales</h2>
+
+
+<div class="gallery-container different-jobs">
+
+  {%- for post in site.posts -%}
+    {%- if post.categories contains "projects" -%}
+      <div class="gallery-post job"> 
+        <a href="{{ post.url }}">
+          <img src="{{ site.imagepath }}{{ post.thumbnail }}" alt="{{ post.title }}">
+          {{ post.title }}
+        </a>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+
+</div>
