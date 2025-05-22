@@ -6,31 +6,31 @@ thumbnail: "/work/portrait/chema/chema-7.jpg"
 ---
 
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-4.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-4.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-5.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-5.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-6.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-6.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-7.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-7.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-8.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-8.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-9.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-9.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-10.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-10.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-11.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-11.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-12.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-12.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-13.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-13.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-1.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-1.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-2.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-2.jpg)
 
-![José María Glallegos Portrait](/assets/images/work/portrait/chema/chema-3.jpg)
+![José María Glallegos Portrait]({{ site.baseurl }}/assets/images/work/portrait/chema/chema-3.jpg)
 
 
 <br>
