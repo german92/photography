@@ -10,6 +10,13 @@ body {
   font-style: normal;
 }
 
+// Diable dragging to protect images
+.no-drag {
+  -webkit-user-drag: none;
+  user-drag: none;
+  user-select: none;
+}
+
 .home-title {
   color: rgb(32, 69, 25);
   font-family: "andale-mono-mt-pro", sans-serif;
