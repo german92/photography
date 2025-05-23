@@ -43,10 +43,11 @@
 
   .nav-item {
     color: $text-color;
+    margin-right: $spacing-unit * 0.5;
 
-    &:not(:last-child) {
-      margin-right: $spacing-unit * 0.5;
-    }
+    // &:not(:last-child) {
+    //   margin-right: $spacing-unit * 0.5;
+    // }
   }
 
   @include media-query($on-medium) {
