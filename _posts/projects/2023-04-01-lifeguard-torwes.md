@@ -6,15 +6,15 @@ thumbnail: "/assets/images/projects/lifeguard/lifeguard-1.jpg"
 ---
 
 
-![Lifeguard Towers One](/assets/images/projects/lifeguard/lifeguard-1.jpg)
+![Lifeguard Towers One]({{ site.baseurl }}/assets/images/projects/lifeguard/lifeguard-1.jpg)
 
-![Lifeguard Towers Tow](/assets/images/projects/lifeguard/lifeguard-2.jpg)
+![Lifeguard Towers Tow]({{ site.baseurl }}/assets/images/projects/lifeguard/lifeguard-2.jpg)
 
-![Lifeguard Towers Three](/assets/images/projects/lifeguard/lifeguard-3.jpg)
+![Lifeguard Towers Three]({{ site.baseurl }}/assets/images/projects/lifeguard/lifeguard-3.jpg)
 
-![Lifeguard Towers Four](/assets/images/projects/lifeguard/lifeguard-4.jpg)
+![Lifeguard Towers Four]({{ site.baseurl }}/assets/images/projects/lifeguard/lifeguard-4.jpg)
 
-![Lifeguard Towers Five](/assets/images/projects/lifeguard/lifeguard-5.jpg)
+![Lifeguard Towers Five]({{ site.baseurl }}/assets/images/projects/lifeguard/lifeguard-5.jpg)
 
 
 
