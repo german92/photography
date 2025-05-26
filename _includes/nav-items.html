@@ -1,17 +1,35 @@
-<div class="nav-items">
+<!-- <div class="nav-items">
   {%- for path in include.paths reversed -%}
   {%- assign hyperpage = site.pages | where: "path", path | first -%}
   {%- if hyperpage.title %}
   <a class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
   {%- endif -%}
   {%- endfor %}
-</div>
-
-<!-- <div class="nav-items">
-  {%- for path in include.paths -%}
-  {%- assign hyperpage = site.pages | where: "path", path | first -%}
-  {%- if hyperpage.title %}
-  <a class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
-  {%- endif -%}
-  {%- endfor %}
 </div> -->
+
+<div class="nav-items">
+  {%- for path in include.paths reversed -%}
+    {%- assign page_item = site.pages | where: "path", path | first -%}
+
+    {%- if page_item.title == "Gallery" -%}
+      <!-- Desktop dropdown -->
+      <div class="nav-item dropdown desktop-only">
+        <a href="#" class="dropdown-toggle">Gallery</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="/work/">Work</a>
+          <a class="dropdown-item" href="/projects/">Projects</a>
+        </div>
+      </div>
+
+      <!-- Mobile direct links -->
+      <a class="nav-item mobile-only" href="/work/">Work</a>
+      <a class="nav-item mobile-only" href="/projects/">Projects</a>
+
+    {%- elsif page_item.title == "Work" or page_item.title == "Projects" -%}
+      <!-- Skip these: already handled manually -->
+    
+    {%- elsif page_item.title -%}
+      <a class="nav-item" href="{{ page_item.url | relative_url }}">{{ page_item.title | escape }}</a>
+    {%- endif -%}
+  {%- endfor %}
+</div>

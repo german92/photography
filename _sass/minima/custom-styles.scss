@@ -27,6 +27,57 @@ body {
 }
 
 
+// Nav dropdown
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 1;
+  border: 1px solid #ccc;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Hide mobile-specific items by default */
+.mobile-only {
+  display: none;
+}
+
+/* Show on mobile nav trigger */
+#nav-trigger:checked ~ .nav-items .mobile-only {
+  display: block;
+}
+
+/* Hide dropdown on mobile when nav is open */
+#nav-trigger:checked ~ .nav-items .desktop-only {
+  display: none;
+}
+
+
 // Jobs home page
 
 .flex-container {

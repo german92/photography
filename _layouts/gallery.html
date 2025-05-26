@@ -13,36 +13,3 @@ layout: base
 
 </article>
 
-<h2 class="home-title">Trabajo</h2>
-
-<div class="flex-container">
-
-  {%- for post in site.posts -%}
-    {%- if post.categories contains "work" -%}
-      <div class="flex-item"> 
-        <a href="{{ post.url }}">
-          <img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="{{ post.title }}">
-          {{ post.title }}
-        </a>
-      </div>
-    {%- endif -%}
-  {%- endfor -%}
-
-</div>
-
-<h2 class="home-title">Proyectos Personales</h2>
-
-<div class="flex-container">
-
-  {%- for post in site.posts -%}
-    {%- if post.categories contains "projects" -%}
-      <div class="flex-item"> 
-        <a href="{{ post.url }}">
-          <img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="{{ post.title }}">
-          {{ post.title }}
-        </a>
-      </div>
-    {%- endif -%}
-  {%- endfor -%}
-
-</div>
