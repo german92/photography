@@ -16,6 +16,9 @@ Aquí encontrará una muestra de mi trabajo profesional en fotografía de bodas,
       <div class="flex-item"> 
         <a href="{{ post.url }}">
           <img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="{{ post.title }}">
+          <div class="logo-overlay">
+            <img src="{{ site.baseurl }}/assets/images/logo-no-text.png" alt="Logo">
+          </div>
           {{ post.title }}
         </a>
       </div>

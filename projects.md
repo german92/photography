@@ -16,6 +16,9 @@ En mis proyectos personales, exploro el arte conceptual y la fotografía de call
       <div class="flex-item"> 
         <a href="{{ post.url }}">
           <img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="{{ post.title }}">
+          <div class="logo-overlay">
+            <img src="{{ site.baseurl }}/assets/images/logo-no-text.png" alt="Logo">
+          </div>
           {{ post.title }}
         </a>
       </div>

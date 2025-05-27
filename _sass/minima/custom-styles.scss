@@ -87,6 +87,9 @@ body {
   box-sizing: border-box;
   padding: 10px; /* optional spacing */
   text-align: center;
+
+  position: relative; /* Needed for overlay */
+  overflow: hidden;
 }
 
 /* Tablets: 2 per row */
@@ -111,11 +114,44 @@ body {
   color: rgb(32, 69, 25);
 }
 
+
+/* Ensure image and text layout stay untouched */
+.flex-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Overlay the logo, but don't change layout */
+.logo-overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.logo-overlay img {
+  opacity: 0.7;
+  display: block;
+}
+
 .flex-item a:hover {
   opacity: 0.5;
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
 }
+
+
+/* Show logo on hover */
+.flex-item:hover .logo-overlay {
+  opacity: 1;
+}
+
+
 
 // Darkroom Section Home
 
