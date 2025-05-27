@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Producto
+title: Fresa en Leche
 categories: work product
 thumbnail: "/assets/images/work/product/fresa.jpg"
 ---
@@ -8,15 +8,9 @@ thumbnail: "/assets/images/work/product/fresa.jpg"
 ![Fresa en leche]({{ site.baseurl }}/assets/images/work/product/fresa.jpg)
 Fresa en leche
 
-![Mejitos y salsa Chunky]({{ site.baseurl }}/assets/images/work/product/comida.jpeg) <br>
-Tostitos y salsa Chunky
-
-![Whiskey Old Par]({{ site.baseurl }}/assets/images/work/product/whiskey.jpeg)
-Whiskey Old Par
-
 <br>
 **Food Styling**<br>
-Food styling.
+Foto tomada con el proposito de congelar el movimiento para crear una fotografía de comida más dimámica. 
 
 
 Publicitaria. Digital. <br>
