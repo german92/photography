@@ -10,13 +10,6 @@ body {
   font-style: normal;
 }
 
-// Diable dragging to protect images
-.no-drag {
-  -webkit-user-drag: none;
-  user-drag: none;
-  user-select: none;
-}
-
 .home-title {
   color: rgb(32, 69, 25);
   font-family: "andale-mono-mt-pro", sans-serif;
@@ -26,8 +19,11 @@ body {
   margin: 80px 0 40px;
 }
 
-
 // Nav dropdown
+
+.nav-items a {
+    color: rgb(32, 69, 25);
+}
 
 .dropdown {
   position: relative;
@@ -36,6 +32,7 @@ body {
 
 .dropdown-toggle {
   cursor: pointer;
+  color: rgb(32, 69, 25);
 }
 
 .dropdown-menu {

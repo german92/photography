@@ -4,9 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-Aquí encontrará una muestra de mi trabajo profesional en fotografía de bodas, eventos, retratos y campañas publicitarias. Me especializo en capturar momentos genuinos y crear imágenes que no solo se ven bien, sino que comunican y conectan con cada público.
-
-Por otro lado, también desarrollo proyectos personales de fotografía artística, donde exploro el arte conceptual y la fotografía de calle como medios para expresar ideas, emociones y reflexiones sobre la vida cotidiana y la condición humana.
+En mis proyectos personales, exploro el arte conceptual y la fotografía de calle como medios para expresar ideas, emociones y reflexiones sobre la vida cotidiana y la condición humana. Mis proyectos son una forma de sanar y aportar luz al mundo.
 
 
 <h2 class="home-title">Arte Conceptual</h2>
