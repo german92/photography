@@ -7,7 +7,7 @@ permalink: /projects/
 En mis proyectos personales, exploro el arte conceptual y la fotografía de calle como medios para expresar ideas, emociones y reflexiones sobre la vida cotidiana y la condición humana. Mis proyectos son una forma de sanar y aportar luz al mundo.
 
 
-<h2 class="home-title">Arte Conceptual</h2>
+<h2 class="home-title"> Trabajos Conceptuales</h2>
 
 <div class="flex-container">
 
