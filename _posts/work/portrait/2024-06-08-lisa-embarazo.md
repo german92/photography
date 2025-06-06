@@ -26,7 +26,7 @@ thumbnail: "/assets/images/work/portrait/lisa-embarazo/lisa-embarazo-1.jpg"
 
 <br>
 **Lisa**<br>
-Sesion de retrato de emarazo.
+Sesion de retrato de embarazo.
 
 
 Retrato. Digital. <br>

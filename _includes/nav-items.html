@@ -13,7 +13,7 @@
 
     {%- if page_item.title == "Gallery" -%}
       <!-- Desktop dropdown -->
-      <div class="nav-item dropdown">
+      <div class="nav-item dropdown desktop-only">
         <a href="#" class="dropdown-toggle">Gallery</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="/work/">Profesional</a>
@@ -22,7 +22,7 @@
       </div>
 
       <!-- Mobile direct links -->
-      <a class="nav-item mobile-only" href="/work/">Work</a>
+      <a class="nav-item mobile-only" href="/work/">Profesional</a>
       <a class="nav-item mobile-only" href="/projects/">Projects</a>
 
     {%- elsif page_item.title == "Work" or page_item.title == "Projects" -%}
