@@ -201,3 +201,39 @@ body {
   padding: 0px 20px;
   color: rgb(101, 123, 96);
 }
+
+
+// Gallery and photo display
+
+.photo-gallery {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.layout-full img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.layout-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.layout-3 .cell {
+  flex: 1 1 calc(33.333% - 0.666rem);
+}
+
+.layout-2 .cell {
+  flex: 1 1 calc(50% - 0.5rem);
+}
+
+.cell img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
