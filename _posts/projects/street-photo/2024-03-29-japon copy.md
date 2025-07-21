@@ -1,0 +1,31 @@
+---
+layout: post
+title: Iguazú
+categories: projects street-photo
+thumbnail: "/assets/images/projects/street-photo/iguazu/iguazu-6.jpg"
+---
+
+<div class="photo-gallery" id="gallery">
+  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/projects/street-photo/iguazu'" %}
+  {% for image in images %}
+    <img 
+      class="gallery-image hidden" 
+      data-src="{{ image.path | relative_url }}" 
+      alt="">
+  {% endfor %}
+</div>
+
+<br>
+**Cataratas de Iguazú**<br>
+Esta serie de imagenes fueron en un viaje a las Cataratas de Iguazú en Argentina. El agua purifica y sana, estas cataratas nos recuedan lo pequeño que somos y lo importante que es la naturaleza.
+
+
+Paisaje y Foto Urbana. Digital. <br>
+2024
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    initGalleryLayout();
+  });
+</script>
