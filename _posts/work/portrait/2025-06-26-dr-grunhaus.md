@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dr. Arieh
+title: Dr. Grunhaus
 categories: work portrait
 thumbnail: "/assets/images/work/portrait/arieh/dr-arieh-6.jpg"
 ---
@@ -18,7 +18,7 @@ thumbnail: "/assets/images/work/portrait/arieh/dr-arieh-6.jpg"
 
 
 <br>
-**Dr. Arieh**<br>
+**Dr. Grunhaus**<br>
 Sesion de fotos realizada para el Dr. Arieh Grunhaus. El objetivo era capturar su escencia y mostrar su espacio de trabajo.
 
 
