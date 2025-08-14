@@ -19,3 +19,4 @@ Servicios de revelado de película en blanco y negro para formatos de 35mm y 120
 <br>
 
 Además, imparto capacitaciones y talleres enfocados en el proceso de ampliación en blanco y negro dentro del cuarto oscuro. Estas experiencias están diseñadas para quienes desean sumergirse en la magia del revelado tradicional y aprender a imprimir sus propias fotografías desde negativos. Acompaño a cada participante en el descubrimiento de esta técnica artesanal, desde lo técnico hasta lo creativo, fomentando un espacio de experimentación, paciencia y conexión con la imagen fotográfica en su forma más tangible.
+
