@@ -65,7 +65,7 @@ function initGalleryLayout() {
         const cell = document.createElement("div");
         cell.className = "cell";
         cell.appendChild(img);
-        row.appendChild(row);
+        row.appendChild(cell);
       });
       gallery.appendChild(row);
     }
