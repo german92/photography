@@ -20,8 +20,8 @@ thumbnail: "/assets/images/projects/street-photo/japon2-film-color/japon2_film_c
 Estas imágenes fueron tomadas con cámara ánaloga en mi segundo viaje a Japón.
 
 
-Paisaje y Foto Urbana. Digital. <br>
-2024
+Paisaje y Foto Urbana. Analogo. <br>
+2025
 
 
 <script>

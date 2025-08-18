@@ -237,3 +237,41 @@ body {
   display: block;
 }
 
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0; /* shorthand for top/right/bottom/left: 0 */
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.modal.hidden {
+  display: none;
+}
+
+#modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.gallery-image {
+  filter: blur(12px);
+  transition: filter 0.5s ease;
+}
+.gallery-image:not(.blurred) {
+  filter: blur(0);
+}

@@ -23,6 +23,7 @@ function initGalleryLayout() {
 
       if (loadedCount === rawImages.length) {
         buildLayout(loadedImages);
+        addModalFeature(loadedImages);
       }
     };
   });
@@ -69,5 +70,65 @@ function initGalleryLayout() {
       });
       gallery.appendChild(row);
     }
+  }
+
+  // -------- Modal with Close Button --------
+  function addModalFeature(images) {
+    // Create modal container
+    let modal = document.createElement("div");
+    modal.id = "simpleModal";
+    modal.style.display = "none";
+    modal.style.position = "fixed";
+    modal.style.top = 0;
+    modal.style.left = 0;
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.background = "rgba(0,0,0,0.85)";
+    modal.style.justifyContent = "center";
+    modal.style.alignItems = "center";
+    modal.style.zIndex = 9999;
+    modal.style.cursor = "pointer";
+    modal.style.display = "none";
+
+    // Modal image
+    const modalImg = document.createElement("img");
+    modalImg.style.maxWidth = "90%";
+    modalImg.style.maxHeight = "90%";
+    modalImg.style.borderRadius = "8px";
+    modalImg.style.boxShadow = "0 10px 40px rgba(0,0,0,.5)";
+    modal.appendChild(modalImg);
+
+    // Close button
+    const closeBtn = document.createElement("span");
+    closeBtn.innerHTML = "&times;";
+    closeBtn.style.position = "absolute";
+    closeBtn.style.top = "20px";
+    closeBtn.style.right = "30px";
+    closeBtn.style.fontSize = "2.5rem";
+    closeBtn.style.color = "#fff";
+    closeBtn.style.cursor = "pointer";
+    closeBtn.style.userSelect = "none";
+    closeBtn.addEventListener("click", e => {
+      e.stopPropagation(); // prevent modal background click
+      modal.style.display = "none";
+    });
+    modal.appendChild(closeBtn);
+
+    // Close modal when clicking background
+    modal.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    document.body.appendChild(modal);
+
+    // Add click events to gallery images
+    images.forEach(img => {
+      img.style.cursor = "pointer";
+      img.addEventListener("click", e => {
+        e.stopPropagation();
+        modalImg.src = img.src;
+        modal.style.display = "flex";
+      });
+    });
   }
 }
