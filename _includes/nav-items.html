@@ -11,7 +11,7 @@
   {%- for path in include.paths reversed -%}
     {%- assign page_item = site.pages | where: "path", path | first -%}
 
-    {%- if page_item.title == "Gallery" -%}
+    {%- if page_item.title == "Gallery" || "Analog" -%}
       <!-- Desktop dropdown -->
       <div class="nav-item dropdown desktop-only">
         <a href="#" class="dropdown-toggle">Gallery</a>
