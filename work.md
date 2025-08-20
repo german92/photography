@@ -7,7 +7,7 @@ permalink: /work/
 Aquí encontrará una muestra de mi trabajo profesional en fotografía de bodas, eventos, retratos y producto. Me especializo en capturar momentos genuinos y crear imágenes que no solo se ven bien, sino que comunican y conectan con cada público.
 
 
-<h2 class="home-title">Retrato</h2>
+<h2 class="home-title">Evento & Retrato</h2>
 
 <div class="flex-container">
 
@@ -27,7 +27,7 @@ Aquí encontrará una muestra de mi trabajo profesional en fotografía de bodas,
 
 </div>
 
-<h2 class="home-title">Producto</h2>
+<h2 class="home-title">Publicitaria</h2>
 
 <div class="flex-container">
 
