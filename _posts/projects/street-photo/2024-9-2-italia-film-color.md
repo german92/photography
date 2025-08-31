@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bogota Film Color
+title: Italia Film Color
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/italia-film-color/italia-film-color-37.jpg"
 ---

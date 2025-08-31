@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bogota Film B&W
+title: Italia Film B&W
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/italia-film-bw/italia-film-bw-8.jpg"
 ---
