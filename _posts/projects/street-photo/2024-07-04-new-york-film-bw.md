@@ -2,7 +2,7 @@
 layout: post
 title: Nueva York Film B&W
 categories: projects street-photo film
-thumbnail: "/assets/images/projects/street-photo/new-york-film-bw/new-york-film-bw0007.jpg"
+thumbnail: "/assets/images/projects/street-photo/new-york-film-bw/new-york-film-bw-17.jpg"
 ---
 
 <div class="photo-gallery" id="gallery">
