@@ -17,7 +17,7 @@ thumbnail: "/assets/images/projects/street-photo/japon2-film-bw/japon2_film-1.jp
 
 
 <br>
-**Japón 2 Blanco y Negro**<br>
+**Japón 2 Film Blanco y Negro**<br>
 Estas imágenes fueron tomadas con cámara ánaloga en mi segundo viaje a Japón.
 
 
