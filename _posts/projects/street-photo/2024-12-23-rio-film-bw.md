@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Japón 2 Film Color
+title: Rio de Janeiro Film B&W
 categories: projects street-photo film
-thumbnail: "/assets/images/projects/street-photo/japon2-film-color/japon2_film_color-22.jpg"
+thumbnail: "/assets/images/projects/street-photo/rio-film-bw/rio-film-bw-2.jpg"
 ---
 
 <div class="photo-gallery" id="gallery">
-  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/projects/street-photo/japon2-film-color'" %}
+  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/projects/street-photo/rio-film-bw'" %}
   {% for image in images %}
     <img 
       class="gallery-image hidden" 
@@ -15,13 +15,14 @@ thumbnail: "/assets/images/projects/street-photo/japon2-film-color/japon2_film_c
   {% endfor %}
 </div>
 
+
 <br>
-**Japón 2 Film Color**<br>
-Estas imágenes fueron tomadas con cámara ánaloga en mi segundo viaje a Japón.
+**Rio De Janeiro Film Blanco y Negro**<br>
+Estas imágenes fueron tomadas con cámara ánaloga en Rio de Janerio.
 
 
 Paisaje y Foto Urbana. Analogo. <br>
-2025
+2024
 
 
 <script>
