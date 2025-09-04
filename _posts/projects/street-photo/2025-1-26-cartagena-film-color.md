@@ -6,7 +6,7 @@ thumbnail: "/assets/images/projects/street-photo/cartagena-film-color/cartagena-
 ---
 
 <div class="photo-gallery" id="gallery">
-  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/projects/street-photo/cartagena-film-bw'" %}
+  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/projects/street-photo/cartagena-film-color'" %}
   {% for image in images %}
     <img 
       class="gallery-image hidden" 
