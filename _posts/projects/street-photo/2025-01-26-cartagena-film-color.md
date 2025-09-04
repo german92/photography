@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cartagena Film B&W
+title: Cartagena Film Color
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/cartagena-film-color/cartagena-film-color-11.jpg"
 ---
