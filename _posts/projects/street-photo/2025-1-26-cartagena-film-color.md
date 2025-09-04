@@ -2,7 +2,7 @@
 layout: post
 title: Cartagena Film B&W
 categories: projects street-photo film
-thumbnail: "/assets/images/projects/street-photo/cartagena-film-bw/cartagena-film-bw-8.jpg"
+thumbnail: "/assets/images/projects/street-photo/cartagena-film-color/cartagena-film-color-11.jpg"
 ---
 
 <div class="photo-gallery" id="gallery">
@@ -17,7 +17,7 @@ thumbnail: "/assets/images/projects/street-photo/cartagena-film-bw/cartagena-fil
 
 
 <br>
-**Cartagena Film Blanco y Negro**<br>
+**Cartagena Film Color**<br>
 Estas imágenes fueron tomadas con cámara ánaloga en Cartagena, Colombia.
 
 Foto Urbana. Análogo. <br>
