@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Buenos Aire Film B&W
+title: Buenos Aire Film Color
 categories: projects street-photo film
-thumbnail: "/assets/images/projects/street-photo/buenos-aires-film-bw/buenos-aires-film-bw-10.jpg"
+thumbnail: "/assets/images/projects/street-photo/buenos-aires-film-color/buenos-aires-film-color-16.jpg"
 ---
 
 <div class="photo-gallery" id="gallery">
-  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/projects/street-photo/buenos-aires-film-bw'" %}
+  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/projects/street-photo/buenos-aires-film-color'" %}
   {% for image in images %}
     <img 
       class="gallery-image hidden" 
@@ -17,7 +17,7 @@ thumbnail: "/assets/images/projects/street-photo/buenos-aires-film-bw/buenos-air
 
 
 <br>
-**Buenos Aire Film Blanco y Negro**<br>
+**Buenos Aire Film Color**<br>
 Estas imágenes fueron tomadas con cámara ánaloga en Buenos Aires, Argentina en fin de año.
 
 Foto Urbana. Análogo. <br>
