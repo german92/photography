@@ -1,13 +1,13 @@
 ---
 layout: post
-title: María José y Bernardo
+title: Andrea y Ariel
 categories: work portrait
-thumbnail: "/assets/images/work/portrait/boda-mariajoseybernardo/boda-mariajoseybernardo-32.jpg"
+thumbnail: "/assets/images/work/portrait/compromiso-andrea-ariel/compromiso-andrea-ariel-14.jpg"
 ---
 
 
 <div class="photo-gallery" id="gallery">
-  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/work/portrait/boda-mariajoseybernardo'" %}
+  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/work/portrait/compromiso-andrea-ariel'" %}
   {% for image in images %}
     <img 
       class="gallery-image hidden" 
@@ -18,8 +18,8 @@ thumbnail: "/assets/images/work/portrait/boda-mariajoseybernardo/boda-mariajosey
 
 
 <br>
-**Boda María José y Bernardo**<br>
-Fotografía profesional de boda (ceremonia civil) de María José y Bernardo.
+**Compromiso Andrea y Ariel**<br>
+Fotografía profesional de compromiso de Andrea y Ariel.
 
 
 Retrato. Digital. <br>
