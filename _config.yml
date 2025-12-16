@@ -1,17 +1,28 @@
 # Site-wide settings
 # ------------------
 
-title: German Ostaszynski
-tagline: Photography
+title: German Ostaszynski | Fotógrafo de Bodas y Retratos en Costa Rica
+tagline: German Ostaszynski | Fotógrafo de Bodas y Retratos en Costa Rica
 
 author:
   name: German Ostaszynski
   email: german92@gmail.com
+  bio: Fotógrafo de bodas y retratos en Costa Rica enfocado en la narrativa emocional y la autenticidad.
+
+url: https://germanosta.com/
+
 #
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
 description: >
-  Wedding and portrait photographer.
+  Fotógrafo de bodas y retratos en Costa Rica, especializado en fotografía emocional,
+  natural y documental. Imágenes honestas que conectan con la esencia de las personas.
+
+social:
+  name: German Ostaszynski
+  links:
+    - https://instagram.com/germanosta.photo/
+    - https://www.linkedin.com/in/german92/
 
 # Build settings
 # --------------
