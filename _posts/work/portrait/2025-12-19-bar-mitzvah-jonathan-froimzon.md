@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ananda Yoga
+title: Shabat Jonathan Froimzon
 categories: work portrait
-thumbnail: "/assets/images/work/portrait/yoga-juli/yoga-juli-8.jpg"
+thumbnail: "/assets/images/work/portrait/shabat-jonathan-froimzon/shabat-jonathan-froimzon-19.jpg"
 ---
 
 
 <div class="photo-gallery" id="gallery">
-  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/work/portrait/yoga-juli'" %}
+  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/work/portrait/shabat-jonathan-froimzon'" %}
   {% for image in images %}
     <img 
       class="gallery-image hidden" 
@@ -18,8 +18,8 @@ thumbnail: "/assets/images/work/portrait/yoga-juli/yoga-juli-8.jpg"
 
 
 <br>
-**Ananda Yoga**<br>
-Fotografía profesional para Juli y Fanny.
+**Jonathan Froimzon**<br>
+Fotografía profesional para el shabat de Bar Mitzvah de Jonathan Froimzon
 
 
 Retrato. Digital. <br>
