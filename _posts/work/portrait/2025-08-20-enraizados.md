@@ -3,6 +3,8 @@ layout: post
 title: José - Enraizados
 categories: work portrait
 thumbnail: "/assets/images/work/portrait/enraizados/enraizados-33.jpg"
+image: "/assets/images/work/portrait/enraizados/enraizados-33.jpg"
+description: "Sesión fotográfica con José de Enraizados en Costa Rica. Retrato documental y auténtico por German Ostaszynski."
 ---
 
 

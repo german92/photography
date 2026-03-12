@@ -3,6 +3,8 @@ layout: post
 title: Cartagena Film Color
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/cartagena-film-color/cartagena-film-color-11.jpg"
+image: "/assets/images/projects/street-photo/cartagena-film-color/cartagena-film-color-11.jpg"
+description: "Fotografía de calle en Cartagena en color en película análoga. Serie documental por German Ostaszynski."
 ---
 
 <div class="photo-gallery" id="gallery">

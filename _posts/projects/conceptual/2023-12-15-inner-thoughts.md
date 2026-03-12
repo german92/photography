@@ -3,6 +3,8 @@ layout: post
 title: Inner Thoughts
 categories: projects conceptual
 thumbnail: "/assets/images/projects/conceptual/doble-exposicion/doble-exposicion-1.jpg"
+image: "/assets/images/projects/conceptual/doble-exposicion/doble-exposicion-1.jpg"
+description: "Proyecto fotográfico conceptual — Inner Thoughts. Doble exposición y exploración del mundo interior por German Ostaszynski."
 ---
 
 

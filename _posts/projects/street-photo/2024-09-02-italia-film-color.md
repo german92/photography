@@ -3,6 +3,8 @@ layout: post
 title: Italia Film Color
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/italia-film-color/italia-film-color-37.jpg"
+image: "/assets/images/projects/street-photo/italia-film-color/italia-film-color-37.jpg"
+description: "Fotografía de calle en Italia en color en película análoga. Serie documental por German Ostaszynski."
 ---
 
 <div class="photo-gallery" id="gallery">

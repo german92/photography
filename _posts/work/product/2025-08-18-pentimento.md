@@ -3,6 +3,8 @@ layout: post
 title: Pentimento
 categories: work product
 thumbnail: "/assets/images/work/product/pentimento/2.jpg"
+image: "/assets/images/work/product/pentimento/2.jpg"
+description: "Fotografía publicitaria para Pentimento en Costa Rica. Imágenes creativas de producto por German Ostaszynski."
 ---
 
 ![Pentimento]({{ site.baseurl }}/assets/images/work/product/pentimento/1.jpg)

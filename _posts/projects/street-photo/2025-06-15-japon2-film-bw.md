@@ -3,6 +3,8 @@ layout: post
 title: Japón 2 Film B&W
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/japon2-film-bw/japon2_film-1.jpg"
+image: "/assets/images/projects/street-photo/japon2-film-bw/japon2_film-1.jpg"
+description: "Fotografía de calle en Japón en blanco y negro en película análoga. Segunda serie documental por German Ostaszynski."
 ---
 
 <div class="photo-gallery" id="gallery">

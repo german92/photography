@@ -3,6 +3,8 @@ layout: post
 title: Dr. Grunhaus
 categories: work portrait
 thumbnail: "/assets/images/work/portrait/arieh/dr-arieh-6.jpg"
+image: "/assets/images/work/portrait/arieh/dr-arieh-6.jpg"
+description: "Retrato profesional del Dr. Grunhaus en Costa Rica. Fotografía corporativa y de retrato por German Ostaszynski."
 ---
 
 

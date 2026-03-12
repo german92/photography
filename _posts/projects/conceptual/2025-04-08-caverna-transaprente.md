@@ -3,6 +3,8 @@ layout: post
 title: Caverna Transparente
 categories: projects conceptual
 thumbnail: "/assets/images/projects/conceptual/caverna-transparente/caverna-transparente.jpg"
+image: "/assets/images/projects/conceptual/caverna-transparente/caverna-transparente.jpg"
+description: "Proyecto fotográfico conceptual — Caverna Transparente. Exploración visual de la introspección por German Ostaszynski."
 ---
 
 

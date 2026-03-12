@@ -3,6 +3,8 @@ layout: post
 title: Rio de Janeiro Film Color
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/rio-film-color/rio-film-color-11.jpg"
+image: "/assets/images/projects/street-photo/rio-film-color/rio-film-color-11.jpg"
+description: "Fotografía de calle en Río de Janeiro en color en película análoga. Serie documental por German Ostaszynski."
 ---
 
 <div class="photo-gallery" id="gallery">

@@ -3,6 +3,8 @@ layout: post
 title: Ethel
 categories: work portrait
 thumbnail: "/assets/images/work/portrait/ethel-cumple-99/ethel-cumple-99-27.jpg"
+image: "/assets/images/work/portrait/ethel-cumple-99/ethel-cumple-99-27.jpg"
+description: "Celebración de 99 años de Ethel en Costa Rica. Fotografía de evento y retrato por German Ostaszynski."
 ---
 
 

@@ -2,6 +2,9 @@
 layout: gallery
 title: Work
 permalink: /work/
+description: "Galería de bodas, retratos y fotografía publicitaria por German Ostaszynski en Costa Rica. Imágenes honestas que capturan emociones reales."
+image: /assets/images/work/portrait/boda-mariajoseybernardo/boda-mariajoseybernardo-32.jpg
+lang: es
 ---
 
 Aquí encontrará una muestra de mi trabajo profesional en fotografía de bodas, eventos, retratos y producto. Me especializo en capturar momentos genuinos y crear imágenes que no solo se ven bien, sino que comunican y conectan con cada público.

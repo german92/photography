@@ -3,6 +3,8 @@ layout: post
 title: Lisa
 categories: work portrait
 thumbnail: "/assets/images/work/portrait/lisa-embarazo/lisa-embarazo-1.jpg"
+image: "/assets/images/work/portrait/lisa-embarazo/lisa-embarazo-1.jpg"
+description: "Sesión de fotografía de embarazo con Lisa en Costa Rica. Imágenes íntimas y emotivas por German Ostaszynski."
 ---
 
 

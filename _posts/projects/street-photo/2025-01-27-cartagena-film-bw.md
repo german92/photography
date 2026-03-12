@@ -3,6 +3,8 @@ layout: post
 title: Cartagena Film B&W
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/cartagena-film-bw/cartagena-film-bw-8.jpg"
+image: "/assets/images/projects/street-photo/cartagena-film-bw/cartagena-film-bw-8.jpg"
+description: "Fotografía de calle en Cartagena en blanco y negro en película análoga. Serie documental por German Ostaszynski."
 ---
 
 <div class="photo-gallery" id="gallery">

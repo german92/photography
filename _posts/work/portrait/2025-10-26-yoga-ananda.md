@@ -3,6 +3,8 @@ layout: post
 title: Ananda Yoga
 categories: work portrait
 thumbnail: "/assets/images/work/portrait/yoga-juli/yoga-juli-8.jpg"
+image: "/assets/images/work/portrait/yoga-juli/yoga-juli-8.jpg"
+description: "Sesión fotográfica para Ananda Yoga en Costa Rica. Fotografía de marca y retrato por German Ostaszynski."
 ---
 
 

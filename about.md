@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about/
+description: "Soy German Ostaszynski, fotógrafo de bodas y retratos en Costa Rica. Apasionado por la fotografía documental, analógica y los procesos de cuarto oscuro."
+image: /assets/images/autoretrato.jpg
 ---
 
 ![My Portrait](../assets/images/autoretrato.jpg)

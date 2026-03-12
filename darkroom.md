@@ -2,6 +2,8 @@
 layout: page
 title: Darkroom
 permalink: /darkroom/
+description: "Servicio de revelado de película en blanco y negro en Costa Rica. Formatos 35mm y 120mm. Atención artesanal al detalle por German Ostaszynski."
+image: /assets/images/darkroom.jpg
 ---
 
 ![My Portrait](../assets/images/film-wash.jpg)

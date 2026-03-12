@@ -3,6 +3,8 @@ layout: post
 title: Intimidad
 categories: projects conceptual
 thumbnail: "/assets/images/projects/conceptual/intimidad/cubismo-4.jpg"
+image: "/assets/images/projects/conceptual/intimidad/cubismo-4.jpg"
+description: "Proyecto fotográfico conceptual — Intimidad. Exploración visual de la cercanía y la vulnerabilidad por German Ostaszynski."
 ---
 
 ![Intimidad]({{ site.baseurl }}/assets/images/projects/conceptual/intimidad/cubismo-1.jpg)

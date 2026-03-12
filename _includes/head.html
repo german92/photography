@@ -2,22 +2,39 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
 
-  <!-- google font  -->
+ <title>{{ page.title }} | German Ostaszynski Fotógrafo de Bodas en Costa Rica</title>
+{%- seo title=false -%}
+
+  <!-- Canonical URL (prevents duplicate content penalties) -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+
+  <!-- Hreflang: tells Google this site is in Spanish for Costa Rica -->
+  <link rel="alternate" hreflang="es-CR" href="{{ page.url | prepend: site.url }}" />
+  <link rel="alternate" hreflang="es" href="{{ page.url | prepend: site.url }}" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <meta name="theme-color" content="#1a1a1a">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
-  <!-- adobe font  -->
+  <!-- Adobe Fonts -->
   <link rel="stylesheet" href="https://use.typekit.net/mnt5dac.css">
 
   <link id="main-stylesheet" rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
   {%- feed_meta -%}
+
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
 
-  {%- include custom-head.html -%}
-  
+  <!-- Structured Data (JSON-LD) -->
+  {%- include structured-data.html -%}
+
 </head>

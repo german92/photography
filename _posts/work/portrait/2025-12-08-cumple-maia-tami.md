@@ -3,6 +3,8 @@ layout: post
 title: Maia y Tami
 categories: work portrait
 thumbnail: "/assets/images/work/portrait/cumple-maia-tami/cumple-maia-tami-09.jpg"
+image: "/assets/images/work/portrait/cumple-maia-tami/cumple-maia-tami-09.jpg"
+description: "Celebración de cumpleaños de Maia y Tami en Costa Rica. Fotografía de evento y retrato por German Ostaszynski."
 ---
 
 

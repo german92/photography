@@ -3,6 +3,8 @@ layout: post
 title: Buenos Aire Film Color
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/buenos-aires-film-color/buenos-aires-film-color-16.jpg"
+image: "/assets/images/projects/street-photo/buenos-aires-film-color/buenos-aires-film-color-16.jpg"
+description: "Fotografía de calle en Buenos Aires en color en película análoga. Serie documental por German Ostaszynski."
 ---
 
 <div class="photo-gallery" id="gallery">

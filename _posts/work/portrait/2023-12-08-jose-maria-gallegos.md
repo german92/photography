@@ -3,6 +3,8 @@ layout: post
 title: Chema
 categories: work portrait
 thumbnail: "/assets/images/work/portrait/chema/chema-7.jpg"
+image: "/assets/images/work/portrait/chema/chema-7.jpg"
+description: "Sesión de retrato con José María Gallegos en Costa Rica. Fotografía documental y emocional por German Ostaszynski."
 ---
 
 

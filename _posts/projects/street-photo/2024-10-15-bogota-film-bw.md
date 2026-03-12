@@ -3,6 +3,8 @@ layout: post
 title: Bogota Film B&W
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/bogota/bogota-7.jpg"
+image: "/assets/images/projects/street-photo/bogota/bogota-7.jpg"
+description: "Fotografía de calle en Bogotá en blanco y negro en película análoga. Serie documental por German Ostaszynski."
 ---
 
 <div class="photo-gallery" id="gallery">

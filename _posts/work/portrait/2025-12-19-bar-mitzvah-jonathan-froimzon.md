@@ -3,6 +3,8 @@ layout: post
 title: Shabat Jonathan Froimzon
 categories: work portrait
 thumbnail: "/assets/images/work/portrait/shabat-jonathan-froimzon/shabat-jonathan-froimzon-19.jpg"
+image: "/assets/images/work/portrait/shabat-jonathan-froimzon/shabat-jonathan-froimzon-19.jpg"
+description: "Bar Mitzvah de Jonathan Froimzon en Costa Rica. Cobertura fotográfica documental por German Ostaszynski."
 ---
 
 

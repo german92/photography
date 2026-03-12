@@ -3,6 +3,8 @@ layout: post
 title: Still Life
 categories: projects conceptual
 thumbnail: "/assets/images/projects/conceptual/still-life/still-life-huevo-thumb.jpg"
+image: "/assets/images/projects/conceptual/still-life/still-life-huevo-thumb.jpg"
+description: "Proyecto fotográfico conceptual — Still Life. Naturaleza muerta y exploración visual por German Ostaszynski."
 ---
 
 

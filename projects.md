@@ -2,6 +2,8 @@
 layout: gallery
 title: Projects
 permalink: /projects/
+description: "Proyectos personales de fotografía conceptual y de calle por German Ostaszynski en Costa Rica. Arte visual que explora la condición humana."
+image: /assets/images/projects/conceptual/ocean/ocean-1.jpg
 ---
 
 En mis proyectos personales, exploro el arte conceptual y la fotografía de calle como medios para expresar ideas, emociones y reflexiones sobre la vida cotidiana y la condición humana. Mis proyectos son una forma de sanar y aportar luz al mundo.

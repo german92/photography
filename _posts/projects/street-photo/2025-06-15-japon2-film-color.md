@@ -3,6 +3,8 @@ layout: post
 title: Japón 2 Film Color
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/japon2-film-color/japon2_film_color-22.jpg"
+image: "/assets/images/projects/street-photo/japon2-film-color/japon2_film_color-22.jpg"
+description: "Fotografía de calle en Japón en color en película análoga. Segunda serie documental por German Ostaszynski."
 ---
 
 <div class="photo-gallery" id="gallery">

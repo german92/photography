@@ -1,0 +1,91 @@
+<!-- 
+  _includes/structured-data.html
+  Paste this file into your _includes/ folder.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": ["LocalBusiness", "ProfessionalService"],
+      "@id": "https://germanosta.com/#business",
+      "name": "German Ostaszynski Fotografía",
+      "alternateName": "GermanOsta",
+      "description": "Fotógrafo de bodas y retratos en Costa Rica. Trabajo documental y emocional, capturo momentos honestos y conexiones auténticas.",
+      "url": "https://germanosta.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://germanosta.com/assets/images/logo.png"
+      },
+      "image": "https://germanosta.com/assets/images/home/welcome-photo.jpg",
+      "telephone": "+50688872213",
+      "email": "german92@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San José",
+        "addressRegion": "San José",
+        "addressCountry": "CR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.9281,
+        "longitude": -84.0907
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Costa Rica"
+      },
+      "serviceType": [
+        "Fotografía de Bodas",
+        "Fotografía de Retratos",
+        "Fotografía Publicitaria",
+        "Revelado de Carrete",
+        "Cuarto Oscuro"
+      ],
+      "priceRange": "$$",
+      "sameAs": [
+        "https://instagram.com/germanosta.photo/",
+        "https://www.linkedin.com/in/german92/"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      }
+    },
+
+    {
+      "@type": "Person",
+      "@id": "https://germanosta.com/#person",
+      "name": "German Ostaszynski",
+      "jobTitle": "Fotógrafo de Bodas y Retratos",
+      "url": "https://germanosta.com",
+      "image": "https://germanosta.com/assets/images/home/welcome-photo.jpg",
+      "worksFor": {
+        "@id": "https://germanosta.com/#business"
+      },
+      "sameAs": [
+        "https://instagram.com/germanosta.photo/",
+        "https://www.linkedin.com/in/german92/"
+      ]
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://germanosta.com/#website",
+      "url": "https://germanosta.com",
+      "name": "German Ostaszynski Fotografía",
+      "description": "Fotógrafo de bodas y retratos en Costa Rica",
+      "publisher": {
+        "@id": "https://germanosta.com/#person"
+      },
+      "inLanguage": "es-CR"
+    }
+
+  ]
+}
+</script>

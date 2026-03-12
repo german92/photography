@@ -3,6 +3,8 @@ layout: post
 title: Lifeguard Towers
 categories: projects conceptual
 thumbnail: "/assets/images/projects/conceptual/lifeguard/lifeguard-1.jpg"
+image: "/assets/images/projects/conceptual/lifeguard/lifeguard-1.jpg"
+description: "Proyecto fotográfico conceptual — Lifeguard Towers. Exploración visual de la vigilancia y la soledad por German Ostaszynski."
 ---
 
 

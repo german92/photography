@@ -3,6 +3,8 @@ layout: post
 title: Eventos OC
 categories: work portrait
 thumbnail: "/assets/images/work/portrait/oc-eventos/oc-eventos-2.jpg"
+image: "/assets/images/work/portrait/oc-eventos/oc-eventos-2.jpg"
+description: "Cobertura fotográfica de Eventos OC en Costa Rica. Fotografía de eventos corporativos por German Ostaszynski."
 ---
 
 

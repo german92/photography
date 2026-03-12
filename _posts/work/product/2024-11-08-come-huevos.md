@@ -3,6 +3,8 @@ layout: post
 title: Come Huevos
 categories: work product
 thumbnail: "/assets/images/work/product/come-huevos/come-huevos3.jpg"
+image: "/assets/images/work/product/come-huevos/come-huevos3.jpg"
+description: "Fotografía publicitaria para Come Huevos en Costa Rica. Imágenes de producto creativas por German Ostaszynski."
 ---
 
 <div class="photo-gallery" id="gallery">

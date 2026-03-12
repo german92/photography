@@ -3,6 +3,8 @@ layout: post
 title: Paco y Lola
 categories: projects conceptual
 thumbnail: "/assets/images/projects/conceptual/paco-lola/paco-lola-3.jpg"
+image: "/assets/images/projects/conceptual/paco-lola/paco-lola-3.jpg"
+description: "Proyecto fotográfico conceptual — Paco y Lola. Narrativa visual íntima y emotiva por German Ostaszynski."
 ---
 
 

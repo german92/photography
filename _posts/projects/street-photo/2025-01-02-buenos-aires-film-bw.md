@@ -3,6 +3,8 @@ layout: post
 title: Buenos Aire Film B&W
 categories: projects street-photo film
 thumbnail: "/assets/images/projects/street-photo/buenos-aires-film-bw/buenos-aires-film-bw-10.jpg"
+image: "/assets/images/projects/street-photo/buenos-aires-film-bw/buenos-aires-film-bw-10.jpg"
+description: "Fotografía de calle en Buenos Aires en blanco y negro en película análoga. Serie documental por German Ostaszynski."
 ---
 
 <div class="photo-gallery" id="gallery">

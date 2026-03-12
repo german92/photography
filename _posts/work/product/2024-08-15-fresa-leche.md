@@ -3,6 +3,8 @@ layout: post
 title: Fresa en Leche
 categories: work product
 thumbnail: "/assets/images/work/product/fresa.jpg"
+image: "/assets/images/work/product/fresa.jpg"
+description: "Fotografía publicitaria de producto — Fresa en Leche. Imágenes creativas para marca por German Ostaszynski en Costa Rica."
 ---
 
 ![Fresa en leche]({{ site.baseurl }}/assets/images/work/product/fresa.jpg)
