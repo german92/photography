@@ -8,13 +8,13 @@
 </div> -->
 
 <div class="nav-items">
-  {%- for path in include.paths reversed -%}
+  {%- for path in include.paths  -%}
     {%- assign page_item = site.pages | where: "path", path | first -%}
 
     {%- if page_item.title == "Gallery" -%}
       <!-- Desktop dropdown -->
       <div class="nav-item dropdown desktop-only">
-        <a href="#" class="dropdown-toggle">Gallery</a>
+        <a href="#" class="dropdown-toggle">Gallería</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="/work/">Profesional</a>
           <a class="dropdown-item" href="/projects/">Personal</a>
@@ -28,16 +28,16 @@
     {%- elsif page_item.title == "Analog" -%}
       <!-- Desktop dropdown -->
       <div class="nav-item dropdown desktop-only">
-        <a href="#" class="dropdown-toggle">Analog</a>
+        <a href="#" class="dropdown-toggle">Analógico</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="/darkroom/">Darkroom</a>
-          <a class="dropdown-item" href="/restauration/">Restauration</a>
+          <a class="dropdown-item" href="/restauration/">Restauración</a>
         </div>
       </div>
 
       <!-- Mobile direct links -->
       <a class="nav-item mobile-only" href="/darkroom/">Darkroom</a>
-      <a class="nav-item mobile-only" href="/restauration/">Restauration</a>
+      <a class="nav-item mobile-only" href="/restauration/">Restauración</a>
 
     {%- elsif page_item.title == "Work" 
     or page_item.title == "Projects" 
