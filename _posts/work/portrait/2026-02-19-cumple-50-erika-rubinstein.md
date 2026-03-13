@@ -14,7 +14,7 @@ description: "Celebración de 50 años de Erika Rubinstein en Costa Rica. Fotogr
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

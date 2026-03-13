@@ -14,7 +14,7 @@ description: "Sesión fotográfica con José de Enraizados en Costa Rica. Retrat
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

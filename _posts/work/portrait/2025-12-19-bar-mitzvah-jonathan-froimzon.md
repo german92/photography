@@ -14,7 +14,7 @@ description: "Bar Mitzvah de Jonathan Froimzon en Costa Rica. Cobertura fotográ
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

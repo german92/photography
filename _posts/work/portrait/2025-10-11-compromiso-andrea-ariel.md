@@ -14,7 +14,7 @@ description: "Sesión de compromiso de Andrea y Ariel en Costa Rica. Fotografía
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

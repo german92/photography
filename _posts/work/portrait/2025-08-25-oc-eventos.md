@@ -14,7 +14,7 @@ description: "Cobertura fotográfica de Eventos OC en Costa Rica. Fotografía de
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

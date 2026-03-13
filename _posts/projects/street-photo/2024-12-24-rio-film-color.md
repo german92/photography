@@ -13,7 +13,7 @@ description: "Fotografía de calle en Río de Janeiro en color en película aná
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

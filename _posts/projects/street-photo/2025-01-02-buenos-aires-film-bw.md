@@ -13,7 +13,7 @@ description: "Fotografía de calle en Buenos Aires en blanco y negro en películ
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

@@ -14,7 +14,7 @@ description: "Retrato profesional del Dr. Grunhaus en Costa Rica. Fotografía co
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

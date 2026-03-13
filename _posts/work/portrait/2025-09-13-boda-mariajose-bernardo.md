@@ -14,7 +14,7 @@ description: "Boda de María José y Bernardo en Costa Rica. Reportaje fotográf
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

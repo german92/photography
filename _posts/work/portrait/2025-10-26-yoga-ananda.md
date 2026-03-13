@@ -14,7 +14,7 @@ description: "Sesión fotográfica para Ananda Yoga en Costa Rica. Fotografía d
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

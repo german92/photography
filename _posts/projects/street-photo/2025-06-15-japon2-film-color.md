@@ -13,7 +13,7 @@ description: "Fotografía de calle en Japón en color en película análoga. Seg
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

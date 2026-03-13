@@ -14,7 +14,7 @@ description: "Celebración de 99 años de Ethel en Costa Rica. Fotografía de ev
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

@@ -13,7 +13,7 @@ description: "Fotografía de calle en Bogotá en blanco y negro en película an�
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

@@ -14,7 +14,7 @@ description: "Boda de Juanca y Toti en Costa Rica. Reportaje fotográfico docume
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

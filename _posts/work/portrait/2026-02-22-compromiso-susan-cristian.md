@@ -14,7 +14,7 @@ description: "Sesi√≥n de compromiso de Susan y Cristian en Costa Rica. Fotograf√
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

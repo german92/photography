@@ -14,7 +14,7 @@ description: "Celebración de cumpleaños de Maia y Tami en Costa Rica. Fotograf
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 

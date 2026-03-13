@@ -13,7 +13,7 @@ description: "Fotografía de calle en Italia en color en película análoga. Ser
     <img 
       class="gallery-image hidden" 
       data-src="{{ image.path | relative_url }}" 
-      alt="">
+      alt="{{ page.description }}">
   {% endfor %}
 </div>
 
