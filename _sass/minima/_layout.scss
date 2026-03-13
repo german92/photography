@@ -44,10 +44,6 @@
   .nav-item {
     color: $text-color;
     margin-right: $spacing-unit * 0.5;
-
-    // &:not(:last-child) {
-    //   margin-right: $spacing-unit * 0.5;
-    // }
   }
 
   @include media-query($on-medium) {
@@ -73,44 +69,23 @@
       width: 36px;
       height: 26px;
       line-height: 0;
-      padding-top: 18px;
+      padding-top: 0;
       text-align: center;
 
-      &::before {
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-      }
-
-      > svg path {
-        fill: $border-color-03;
-      }
+      > svg { display: none; }
     }
 
     #nav-trigger {
-      ~ label[for=nav-trigger] .menu-icon {
-        &::before {
-          content: "\f0c9";
-          font-size: 1.25em;
-        }
-      }
       ~ .nav-items {
         clear: both;
-        display: none
+        display: none;
       }
-      &:checked {
-      ~ label[for=nav-trigger] .menu-icon {
-        &::before {
-          content: "\f00d";
-          font-size: 1.5em;
-        }
-      }
-        ~ .nav-items {
-          display: block;
-          padding-bottom: 5px;
-          .nav-item {
-            margin-left: 20px;
-            padding: 5px 10px;
-          }
+      &:checked ~ .nav-items {
+        display: block;
+        padding-bottom: 5px;
+        .nav-item {
+          margin-left: 20px;
+          padding: 5px 10px;
         }
       }
     }

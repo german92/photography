@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Juanca & Toti
-categories: work portrait
+categories: work portrait wedding
 thumbnail: "/assets/images/work/portrait/boda-juanca-toti/boda-juanca-toti-33.jpg"
 image: "/assets/images/work/portrait/boda-juanca-toti/boda-juanca-toti-33.jpg"
 description: "Boda de Juanca y Toti en Costa Rica. Reportaje fotográfico documental y emocional por German Ostaszynski."
