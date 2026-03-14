@@ -2235,6 +2235,19 @@ body:has(.page-retratos) {
 // ABOUT PAGE — .page-about
 // =============================================
 
+body:has(.page-about) {
+  .page-content, .wrapper {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .site-header .wrapper {
+    max-width: 100% !important;
+    padding: 0 40px !important;
+  }
+}
+
 .page-about {
 
   // ---- HERO ----
@@ -2243,6 +2256,8 @@ body:has(.page-retratos) {
     grid-template-columns: 2fr 1fr;
     min-height: 70vh;
     border-bottom: 1px solid rgba(32, 69, 25, 0.08);
+    padding-top: 20px;
+
   }
 
   .a-hero__img-wrap {

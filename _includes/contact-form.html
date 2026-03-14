@@ -1,0 +1,54 @@
+<section class="a-contact a-fade" id="contacto">
+  <div class="a-contact__inner">
+
+    <div class="a-contact__left">
+      <p class="a-contact__label">Contacto</p>
+      <h2 class="a-contact__title">Hablemos</h2>
+      <p class="a-contact__text">Si conectás con esta forma de ver la fotografía, me encantaría escuchar sobre tu proyecto.</p>
+      <div class="a-contact__links">
+        <a href="https://wa.me/50688872213" class="a-contact__link" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="mailto:german92@gmail.com" class="a-contact__link">
+          <i class="fa-regular fa-envelope"></i> german92@gmail.com
+        </a>
+        <a href="https://www.instagram.com/germanosta.photo/" class="a-contact__link" target="_blank">
+          <i class="fa-brands fa-instagram"></i> @germanosta.photo
+        </a>
+      </div>
+    </div>
+
+    <div class="a-contact__right">
+      <form class="a-form" action="https://formspree.io/f/mwvrqrwz" method="POST">
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde germanosta.com">
+        <div class="a-form__field">
+          <label class="a-form__label" for="name">Nombre</label>
+          <input class="a-form__input" type="text" id="name" name="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="a-form__field">
+          <label class="a-form__label" for="email">Email</label>
+          <input class="a-form__input" type="email" id="email" name="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="a-form__field">
+          <label class="a-form__label" for="type">Tipo de sesión</label>
+          <select class="a-form__input a-form__select" id="type" name="type">
+            <option value="">Seleccioná una opción</option>
+            <option value="boda">Boda</option>
+            <option value="compromiso">Compromiso / Pre-boda</option>
+            <option value="evento">Evento</option>
+            <option value="retrato">Retrato</option>
+            <option value="familia">Familia</option>
+            <option value="embarazo">Embarazo</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="a-form__field">
+          <label class="a-form__label" for="message">Mensaje</label>
+          <textarea class="a-form__input a-form__textarea" id="message" name="message" placeholder="Contame sobre tu proyecto..." required></textarea>
+        </div>
+        <button class="a-form__btn" type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+
+  </div>
+</section>

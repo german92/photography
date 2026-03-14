@@ -22,6 +22,6 @@ values:
 contact_title: "Hablemos"
 contact_text: "Si conectás con esta forma de ver la fotografía, me encantaría escuchar sobre tu proyecto. Escribime por cualquiera de estos medios o completá el formulario."
 whatsapp: "50688872213"
-email: "german@germanosta.com"
-formspree_url: "https://formspree.io/f/XXXXXXXX"
+email: "german92@gmail.com"
+formspree_url: "https://formspree.io/f/mwvrqrwz"
 ---
