@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cinthya y Luis
-categories: work portrait
+categories: work portrait wedding
 thumbnail: "/assets/images/work/portrait/compromiso-cinthya-luis/compromiso-cinthya-luis-24.jpg"
 image: "/assets/images/work/portrait/compromiso-cinthya-luis/compromiso-cinthya-luis-24.jpg"
 description: "Sesión de compromiso de Cinthya y Luis en Costa Rica. Fotografía romántica y documental por German Ostaszynski."

@@ -1,15 +1,27 @@
 ---
-layout: page
-title: Acerca
-permalink: /about/
-description: "Soy German Ostaszynski, fotógrafo de bodas y retratos en Costa Rica. Apasionado por la fotografía documental, analógica y los procesos de cuarto oscuro."
-image: /assets/images/autoretrato.jpg
+layout: about
+title: "German Ostaszynski"
+permalink: /acerca/
+description: "Fotógrafo documental de bodas, eventos y retratos en Costa Rica. Conozca a German Ostaszynski y su enfoque en fotografía emocional y natural."
+role: "Fotógrafo documental · Costa Rica"
+photo: "/assets/images/home/retratos/autoretrato-german-fotografo.jpg"
+
+bio:
+  - "Soy German Ostaszynski, fotógrafo con sede en San José, Costa Rica. Trabajo principalmente en bodas, eventos y retratos — siempre desde una mirada documental y sensible."
+  - "Mi enfoque no es dirigir ni posar. Es observar, anticipar y estar presente en el momento justo. Creo que las mejores fotos son las que la gente no sabe que le están sacando."
+  - "Trabajo con luz natural y en locaciones que tengan sentido para cada persona o pareja. No tengo un estilo único de iluminación ni un set predeterminado — me adapto a cada historia."
+
+values:
+  - title: "Honestidad"
+    text: "Fotografío lo que realmente pasa, no lo que debería pasar. Sin poses fabricadas ni momentos construidos."
+  - title: "Presencia"
+    text: "Mi trabajo empieza mucho antes de apretar el obturador. Se trata de crear un ambiente donde la gente se olvide de la cámara."
+  - title: "Conexión"
+    text: "Cada sesión es diferente porque cada persona es diferente. Me interesa entender quién sos antes de fotografiarte."
+
+contact_title: "Hablemos"
+contact_text: "Si conectás con esta forma de ver la fotografía, me encantaría escuchar sobre tu proyecto. Escribime por cualquiera de estos medios o completá el formulario."
+whatsapp: "50688872213"
+email: "german@germanosta.com"
+formspree_url: "https://formspree.io/f/XXXXXXXX"
 ---
-
-![My Portrait](../assets/images/autoretrato.jpg)
-
-<br>
-
-Soy fotógrafo de bodas y retratos, con una profunda pasión por capturar momentos genuinos y emotivos. Ya sea la intimidad silenciosa de una pareja en su día especial o la personalidad que emerge en una sesión de retrato, busco crear imágenes que se sientan atemporales y honestas. Mi enfoque se basa en la narración visual, y cada fotografía es una oportunidad para reflejar la esencia de quienes están frente a mi lente.
-
-Más allá de mi trabajo con clientes, me apasiona la fotografía análoga y los procesos tradicionales de cuarto oscuro. Hay algo muy poderoso en desacelerar y conectar con el oficio de una forma más tangible. También dedico tiempo a proyectos personales que me permiten explorar temas más profundos y experimentar creativamente; estos se convierten en espacios donde proceso ideas, emociones y cuestionamientos sobre el mundo que me rodea.

@@ -1,52 +1,53 @@
-<!-- <div class="nav-items">
-  {%- for path in include.paths reversed -%}
-  {%- assign hyperpage = site.pages | where: "path", path | first -%}
-  {%- if hyperpage.title %}
-  <a class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
-  {%- endif -%}
-  {%- endfor %}
-</div> -->
+<div class="nav-items">
+  <a class="nav-item" href="/bodas/">Bodas</a>
+  <a class="nav-item" href="/eventos/">Eventos</a>
+  <a class="nav-item" href="/retratos/">Retratos</a>
+  <a class="nav-item" href="/acerca/">Acerca</a>
+</div>
 
+
+
+<!-- 
 <div class="nav-items">
   {%- for path in include.paths  -%}
     {%- assign page_item = site.pages | where: "path", path | first -%}
 
-    {%- if page_item.title == "Gallery" -%}
+    {%- if page_item.title == "Gallery" -%} -->
       <!-- Desktop dropdown -->
-      <div class="nav-item dropdown desktop-only">
+      <!-- <div class="nav-item dropdown desktop-only">
         <a href="#" class="dropdown-toggle">Gallería</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="/work/">Profesional</a>
           <a class="dropdown-item" href="/projects/">Personal</a>
         </div>
-      </div>
+      </div> -->
 
       <!-- Mobile direct links -->
-      <a class="nav-item mobile-only" href="/work/">Profesional</a>
-      <a class="nav-item mobile-only" href="/projects/">Projects</a>
+      <!-- <a class="nav-item mobile-only" href="/work/">Profesional</a>
+      <a class="nav-item mobile-only" href="/projects/">Projects</a> -->
 
-    {%- elsif page_item.title == "Analog" -%}
+    <!-- {%- elsif page_item.title == "Analog" -%} -->
       <!-- Desktop dropdown -->
-      <div class="nav-item dropdown desktop-only">
+      <!-- <div class="nav-item dropdown desktop-only">
         <a href="#" class="dropdown-toggle">Analógico</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="/darkroom/">Darkroom</a>
           <a class="dropdown-item" href="/restauration/">Restauración</a>
         </div>
-      </div>
+      </div> -->
 
       <!-- Mobile direct links -->
-      <a class="nav-item mobile-only" href="/darkroom/">Darkroom</a>
-      <a class="nav-item mobile-only" href="/restauration/">Restauración</a>
+      <!-- <a class="nav-item mobile-only" href="/darkroom/">Darkroom</a>
+      <a class="nav-item mobile-only" href="/restauration/">Restauración</a> -->
 
-    {%- elsif page_item.title == "Work" 
+    <!-- {%- elsif page_item.title == "Work" 
     or page_item.title == "Projects" 
     or page_item.title == "Darkroom" 
-    or page_item.title == "Restauration" -%}
+    or page_item.title == "Restauration" -%} -->
       <!-- Skip these: already handled manually -->
     
-    {%- elsif page_item.title -%}
+    <!-- {%- elsif page_item.title -%}
       <a class="nav-item" href="{{ page_item.url | relative_url }}">{{ page_item.title | escape }}</a>
     {%- endif -%}
   {%- endfor %}
-</div>
+</div> -->

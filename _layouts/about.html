@@ -1,0 +1,121 @@
+---
+layout: base
+---
+
+<div class="page-about">
+
+  <!-- HERO — photo + name -->
+  <section class="a-hero">
+    <div class="a-hero__img-wrap">
+      <img class="a-hero__img" src="{{ page.photo }}" alt="German Ostaszynski fotógrafo de bodas Costa Rica">
+    </div>
+    <div class="a-hero__text">
+      <p class="a-hero__eyebrow">San José, Costa Rica</p>
+      <h1 class="a-hero__name">{{ page.title }}</h1>
+      <p class="a-hero__role">{{ page.role }}</p>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="a-bio a-fade">
+    <div class="a-bio__inner">
+      <div class="a-bio__left">
+        <p class="a-bio__label">Sobre mí</p>
+      </div>
+      <div class="a-bio__right">
+        {% for paragraph in page.bio %}
+        <p class="a-bio__text">{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="a-values a-fade">
+    <div class="a-values__inner">
+      {% for value in page.values %}
+      <div class="a-value">
+        <span class="a-value__number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+        <h3 class="a-value__title">{{ value.title }}</h3>
+        <p class="a-value__text">{{ value.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="a-contact a-fade" id="contacto">
+    <div class="a-contact__inner">
+
+      <div class="a-contact__left">
+        <p class="a-contact__label">Contacto</p>
+        <h2 class="a-contact__title">{{ page.contact_title }}</h2>
+        <p class="a-contact__text">{{ page.contact_text }}</p>
+        <div class="a-contact__links">
+          <a href="https://wa.me/{{ page.whatsapp }}" class="a-contact__link" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="mailto:{{ page.email }}" class="a-contact__link">
+            <i class="fa-regular fa-envelope"></i> {{ page.email }}
+          </a>
+          <a href="https://www.instagram.com/germanosta.photo/" class="a-contact__link" target="_blank">
+            <i class="fa-brands fa-instagram"></i> @germanosta.photo
+          </a>
+        </div>
+      </div>
+
+      <div class="a-contact__right">
+        <form class="a-form" action="{{ page.formspree_url }}" method="POST">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde germanosta.com">
+          <input type="hidden" name="_next" value="{{ site.url }}/gracias/">
+
+          <div class="a-form__field">
+            <label class="a-form__label" for="name">Nombre</label>
+            <input class="a-form__input" type="text" id="name" name="name" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="a-form__field">
+            <label class="a-form__label" for="email">Email</label>
+            <input class="a-form__input" type="email" id="email" name="email" placeholder="tu@email.com" required>
+          </div>
+
+          <div class="a-form__field">
+            <label class="a-form__label" for="type">Tipo de sesión</label>
+            <select class="a-form__input a-form__select" id="type" name="type">
+              <option value="">Seleccioná una opción</option>
+              <option value="boda">Boda</option>
+              <option value="compromiso">Compromiso / Pre-boda</option>
+              <option value="evento">Evento</option>
+              <option value="retrato">Retrato</option>
+              <option value="familia">Familia</option>
+              <option value="embarazo">Embarazo</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="a-form__field">
+            <label class="a-form__label" for="message">Mensaje</label>
+            <textarea class="a-form__input a-form__textarea" id="message" name="message" placeholder="Contame sobre tu proyecto..." required></textarea>
+          </div>
+
+          <button class="a-form__btn" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.a-fade').forEach(el => observer.observe(el));
+</script>

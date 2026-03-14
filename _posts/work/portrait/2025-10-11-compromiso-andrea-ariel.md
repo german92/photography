@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Andrea y Ariel
-categories: work portrait
+categories: work portrait wedding
 thumbnail: "/assets/images/work/portrait/compromiso-andrea-ariel/compromiso-andrea-ariel-14.jpg"
 image: "/assets/images/work/portrait/compromiso-andrea-ariel/compromiso-andrea-ariel-14.jpg"
 description: "Sesión de compromiso de Andrea y Ariel en Costa Rica. Fotografía emotiva y natural por German Ostaszynski."

@@ -2,516 +2,113 @@
 layout: base
 ---
 
-<style>
-  /* Reset for full-bleed */
-  .page-content, .wrapper {
-    max-width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
+<div class="page-wedding">
 
-  /* ---- NAVBAR OVERRIDE ---- */
-  .site-header {
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background: transparent !important;
-    border-top: none !important;
-    border-bottom: none !important;
-    box-shadow: none !important;
-  }
-
-  .site-header .wrapper {
-    max-width: 100% !important;
-    padding: 0 40px !important;
-  }
-
-  .site-title, .site-title:visited,
-  .site-title img {
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
-  }
-
-  .nav-item a, .dropdown-toggle, .site-nav .page-link {
-    color: rgb(247, 236, 223) !important;
-    opacity: 0.85;
-  }
-
-  .nav-item a:hover, .dropdown-toggle:hover, .site-nav .page-link:hover {
-    opacity: 1;
-  }
-
-  .dropdown-menu {
-    background: rgba(20, 50, 15, 0.95) !important;
-    border: none !important;
-  }
-
-  .dropdown-item {
-    color: rgb(247, 236, 223) !important;
-  }
-
-  .dropdown-item:hover {
-    background: rgba(247, 236, 223, 0.1) !important;
-  }
-
-  /* ---- HERO ---- */
-  .w-hero {
-    position: relative;
-    height: 100vh;
-    min-height: 600px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-    padding: 60px;
-    margin-top: -60px;
-  }
-
-  .w-hero__img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 30%;
-    filter: brightness(0.72);
-    transition: transform 8s ease;
-  }
-
-  .w-hero:hover .w-hero__img {
-    transform: scale(1.04);
-  }
-
-  .w-hero__text {
-    position: relative;
-    z-index: 2;
-    color: rgb(247, 236, 223);
-  }
-
-  .w-hero__eyebrow {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 16px;
-  }
-
-  .w-hero__title {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: clamp(2.8rem, 6vw, 5.5rem);
-    font-weight: 400;
-    line-height: 1.05;
-    margin: 0 0 24px;
-    max-width: 700px;
-    color: rgb(247, 236, 223);
-  }
-
-  .w-hero__scroll {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    opacity: 0.5;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .w-hero__scroll::after {
-    content: "";
-    display: block;
-    width: 40px;
-    height: 1px;
-    background: currentColor;
-  }
-
-  /* ---- MANIFESTO ---- */
-  .w-manifesto {
-    padding: 120px 60px;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .w-manifesto__text {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: clamp(1.3rem, 2.5vw, 2rem);
-    font-weight: 400;
-    line-height: 1.6;
-    color: rgb(32, 69, 25);
-    opacity: 0.88;
-  }
-
-  .w-manifesto__text em {
-    font-style: italic;
-    opacity: 0.6;
-  }
-
-  /* ---- GRID ---- */
-  .w-grid {
-    padding: 0 40px 80px;
-  }
-
-  .w-grid__row {
-    display: grid;
-    gap: 8px;
-    margin-bottom: 8px;
-  }
-
-  .w-grid__row--2 { grid-template-columns: 1fr 1fr; }
-  .w-grid__row--3 { grid-template-columns: 1fr 1fr 1fr; }
-  .w-grid__row--hero { grid-template-columns: 1.6fr 1fr; }
-  .w-grid__row--hero-r { grid-template-columns: 1fr 1.6fr; }
-
-  .w-grid__item {
-    overflow: hidden;
-    position: relative;
-  }
-
-  .w-grid__item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.6s ease, filter 0.6s ease;
-    filter: brightness(0.95);
-  }
-
-  .w-grid__item:hover img {
-    transform: scale(1.03);
-    filter: brightness(1);
-  }
-
-  .w-grid__item--tall { height: 520px; }
-  .w-grid__item--mid  { height: 380px; }
-  .w-grid__item--short { height: 280px; }
-
-  /* ---- STORY PHASES ---- */
-  .w-phases {
-    padding: 100px 60px;
-    background: rgb(32, 69, 25);
-    color: rgb(247, 236, 223);
-  }
-
-  .w-phases__label {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    opacity: 0.45;
-    margin-bottom: 80px;
-  }
-
-  .w-phases__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0;
-  }
-
-  .w-phase {
-    padding: 0 48px 0 0;
-    border-right: 1px solid rgba(247, 236, 223, 0.12);
-    margin-right: 48px;
-  }
-
-  .w-phase:last-child {
-    border-right: none;
-    margin-right: 0;
-    padding-right: 0;
-  }
-
-  .w-phase__number {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    opacity: 0.35;
-    margin-bottom: 28px;
-    display: block;
-  }
-
-  .w-phase__title {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: clamp(1.4rem, 2.2vw, 1.9rem);
-    font-weight: 400;
-    line-height: 1.15;
-    margin: 0 0 20px;
-  }
-
-  .w-phase__text {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: 0.85rem;
-    line-height: 1.75;
-    opacity: 0.6;
-    margin: 0;
-  }
-
-  .w-phase__img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 28px;
-    filter: brightness(0.85) grayscale(0.2);
-    transition: filter 0.5s ease;
-  }
-
-  .w-phase:hover .w-phase__img {
-    filter: brightness(0.95) grayscale(0);
-  }
-
-  @media (max-width: 768px) {
-    .w-phases { padding: 60px 24px; }
-    .w-phases__grid {
-      grid-template-columns: 1fr;
-      gap: 60px;
-    }
-    .w-phase {
-      border-right: none;
-      border-bottom: 1px solid rgba(247, 236, 223, 0.12);
-      padding: 0 0 60px 0;
-      margin: 0;
-    }
-    .w-phase:last-child { border-bottom: none; padding-bottom: 0; }
-  }
-
-  /* ---- COUPLES ---- */
-  .w-couples {
-    padding: 80px 60px;
-    border-top: 1px solid rgba(32, 69, 25, 0.12);
-  }
-
-  .w-couples__label {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgb(32, 69, 25);
-    opacity: 0.45;
-    margin-bottom: 48px;
-  }
-
-  .w-couples__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 32px;
-  }
-
-  .w-couple {
-    text-decoration: none;
-    display: block;
-  }
-
-  .w-couple__img-wrap {
-    overflow: hidden;
-    margin-bottom: 14px;
-    aspect-ratio: 4/3;
-  }
-
-  .w-couple__img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.5s ease;
-    filter: brightness(0.95);
-  }
-
-  .w-couple:hover .w-couple__img-wrap img {
-    transform: scale(1.04);
-  }
-
-  .w-couple__name {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: 0.85rem;
-    color: rgb(32, 69, 25);
-    letter-spacing: 0.05em;
-  }
-
-  .w-couple__meta {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: 0.72rem;
-    color: rgb(32, 69, 25);
-    opacity: 0.45;
-    margin-top: 4px;
-  }
-
-  /* ---- CTA ---- */
-  .w-cta {
-    padding: 140px 60px;
-    text-align: center;
-    background: rgb(32, 69, 25);
-    color: rgb(247, 236, 223);
-  }
-
-  .w-cta__eyebrow {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    opacity: 0.5;
-    margin-bottom: 24px;
-  }
-
-  .w-cta__title {
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    font-weight: 400;
-    line-height: 1.15;
-    margin: 0 auto 48px;
-    max-width: 700px;
-  }
-
-  .w-cta__btn {
-    display: inline-block;
-    font-family: "andale-mono-mt-pro", monospace;
-    font-size: 0.78rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgb(32, 69, 25);
-    background: rgb(247, 236, 223);
-    padding: 18px 40px;
-    text-decoration: none;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-
-  .w-cta__btn:hover {
-    background: rgb(32, 69, 25);
-    color: rgb(247, 236, 223);
-    outline: 1px solid rgb(247, 236, 223);
-  }
-
-  /* ---- RESPONSIVE ---- */
-  @media (max-width: 768px) {
-    .w-hero { padding: 40px 24px; }
-    .w-manifesto { padding: 80px 24px; }
-    .w-grid { padding: 0 16px 40px; }
-    .w-grid__row--hero,
-    .w-grid__row--hero-r,
-    .w-grid__row--2 { grid-template-columns: 1fr; }
-    .w-grid__row--3 { grid-template-columns: 1fr 1fr; }
-    .w-grid__item--tall { height: 320px; }
-    .w-grid__item--mid  { height: 260px; }
-    .w-grid__item--short { height: 200px; }
-    .w-couples { padding: 60px 24px; }
-    .w-cta { padding: 80px 24px; }
-  }
-
-  /* ---- FADE IN ---- */
-  .w-fade {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .w-fade.visible {
-    opacity: 1;
-    transform: none;
-  }
-</style>
-
-<!-- HERO -->
-<section class="w-hero">
-  <img 
-    class="w-hero__img" 
-    src="{{ page.hero_image }}" 
-    alt="{{ page.description }}">
-  <div class="w-hero__text">
-    <p class="w-hero__eyebrow">Fotografía de bodas · Costa Rica</p>
-    <h1 class="w-hero__title">{{ page.title }}</h1>
-    <span class="w-hero__scroll">desplazar</span>
-  </div>
-</section>
-
-<!-- MANIFESTO -->
-<section class="w-manifesto w-fade">
-  <p class="w-manifesto__text">{{ page.manifesto }}</p>
-</section>
-
-<!-- EDITORIAL GRID -->
-<section class="w-grid">
-  {% if page.grid_images %}
-  <div class="w-grid__row w-grid__row--hero w-fade">
-    <div class="w-grid__item w-grid__item--tall">
-      <img src="{{ page.grid_images[0] }}" alt="{{ page.description }}">
+  <!-- HERO -->
+  <section class="w-hero">
+    <img 
+      class="w-hero__img" 
+      src="{{ page.hero_image }}" 
+      alt="{{ page.description }}">
+    <div class="w-hero__text">
+      <p class="w-hero__eyebrow">natural · espontánea · diferente</p>
+      <h1 class="w-hero__title">{{ page.title }}</h1>
+      <span class="w-hero__scroll">Costa Rica</span>
     </div>
-    <div class="w-grid__item w-grid__item--tall">
-      <img src="{{ page.grid_images[1] }}" alt="{{ page.description }}">
-    </div>
-  </div>
-  <div class="w-grid__row w-grid__row--3 w-fade">
-    <div class="w-grid__item w-grid__item--mid">
-      <img src="{{ page.grid_images[2] }}" alt="{{ page.description }}">
-    </div>
-    <div class="w-grid__item w-grid__item--mid">
-      <img src="{{ page.grid_images[3] }}" alt="{{ page.description }}">
-    </div>
-    <div class="w-grid__item w-grid__item--mid">
-      <img src="{{ page.grid_images[4] }}" alt="{{ page.description }}">
-    </div>
-  </div>
-  <div class="w-grid__row w-grid__row--hero-r w-fade">
-    <div class="w-grid__item w-grid__item--mid">
-      <img src="{{ page.grid_images[5] }}" alt="{{ page.description }}">
-    </div>
-    <div class="w-grid__item w-grid__item--tall">
-      <img src="{{ page.grid_images[6] }}" alt="{{ page.description }}">
-    </div>
-  </div>
-  {% endif %}
-</section>
+  </section>
 
-<!-- STORY PHASES -->
-<section class="w-phases w-fade">
-  <p class="w-phases__label">Una historia completa</p>
-  <div class="w-phases__grid">
+  <!-- MANIFESTO -->
+  <section class="w-manifesto w-fade">
+    <p class="w-manifesto__text">{{ page.manifesto }}</p>
+  </section>
 
-    <div class="w-phase">
-      <span class="w-phase__number">01</span>
-      <img class="w-phase__img" src="{{ page.phase_images[0] }}" alt="Sesión de compromiso - German Ostaszynski">
-      <h3 class="w-phase__title">Antes — El compromiso</h3>
-      <p class="w-phase__text">La sesión de compromiso es el primer capítulo. Un momento para conocernos, para que ustedes se olviden de la cámara, y para empezar a construir la historia juntos. Sin poses. Sin guiones.</p>
-    </div>
-
-    <div class="w-phase">
-      <span class="w-phase__number">02</span>
-      <img class="w-phase__img" src="{{ page.phase_images[1] }}" alt="Fotografía de boda - German Ostaszynski">
-      <h3 class="w-phase__title">Durante — La boda</h3>
-      <p class="w-phase__text">El día de la boda es puro presente. Trabajo desde las sombras — observando, anticipando, documentando cada emoción real. Las risas, las lágrimas, los silencios. Todo cuenta.</p>
-    </div>
-
-    <div class="w-phase">
-      <span class="w-phase__number">03</span>
-      <img class="w-phase__img" src="{{ page.phase_images[2] }}" alt="Sesión después de la boda - German Ostaszynski">
-      <h3 class="w-phase__title">Después — La sesión post-boda</h3>
-      <p class="w-phase__text">Con el vestido todavía puesto y la emoción fresca, una sesión íntima al día siguiente. Sin apuros, sin cronograma. Solo ustedes dos y la luz que queda.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- COUPLES LIST -->
-<section class="w-couples w-fade">
-  <p class="w-couples__label">Bodas recientes</p>
-  <div class="w-couples__grid">
-    {% assign wedding_posts = site.posts | where_exp: "p", "p.categories contains 'wedding'" %}
-    {% for post in wedding_posts limit: 6 %}
-    <a class="w-couple" href="{{ post.url | relative_url }}">
-      <div class="w-couple__img-wrap">
-        <img src="{{ post.thumbnail }}" alt="{{ post.title }} - German Ostaszynski fotografía de bodas">
+  <!-- EDITORIAL GRID -->
+  <section class="w-grid">
+    {% if page.grid_images %}
+    <div class="w-grid__row w-grid__row--hero w-fade">
+      <div class="w-grid__item w-grid__item--tall">
+        <img src="{{ page.grid_images[0] }}" alt="{{ page.description }}">
       </div>
-      <p class="w-couple__name">{{ post.title }}</p>
-      <p class="w-couple__meta">{{ post.date | date: "%Y" }} · {{ post.location | default: "Costa Rica" }}</p>
-    </a>
-    {% endfor %}
-  </div>
-</section>
+      <div class="w-grid__item w-grid__item--tall">
+        <img src="{{ page.grid_images[1] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    <div class="w-grid__row w-grid__row--3 w-fade">
+      <div class="w-grid__item w-grid__item--mid">
+        <img src="{{ page.grid_images[2] }}" alt="{{ page.description }}">
+      </div>
+      <div class="w-grid__item w-grid__item--mid">
+        <img src="{{ page.grid_images[3] }}" alt="{{ page.description }}">
+      </div>
+      <div class="w-grid__item w-grid__item--mid">
+        <img src="{{ page.grid_images[4] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    <div class="w-grid__row w-grid__row--hero-r w-fade">
+      <div class="w-grid__item w-grid__item--mid">
+        <img src="{{ page.grid_images[5] }}" alt="{{ page.description }}">
+      </div>
+      <div class="w-grid__item w-grid__item--tall">
+        <img src="{{ page.grid_images[6] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    {% endif %}
+  </section>
 
-<!-- CTA -->
-<section class="w-cta w-fade">
-  <p class="w-cta__eyebrow">Tu historia merece ser contada</p>
-  <h2 class="w-cta__title">{{ page.cta_text }}</h2>
-  <a class="w-cta__btn" href="{{ page.cta_link }}">Escribime</a>
-</section>
+  <!-- STORY PHASES -->
+  <section class="w-phases w-fade">
+    <p class="w-phases__label">Una historia completa</p>
+    <div class="w-phases__grid">
+
+      <div class="w-phase">
+        <span class="w-phase__number">01</span>
+        <img class="w-phase__img" src="{{ page.phase_images[0] }}" alt="Sesión de compromiso - German Ostaszynski">
+        <h3 class="w-phase__title">Antes — El compromiso</h3>
+        <p class="w-phase__text">La sesión de compromiso es el primer capítulo. Un momento para conocernos, para que ustedes se olviden de la cámara, y para empezar a construir la historia juntos. Sin poses. Sin guiones.</p>
+      </div>
+
+      <div class="w-phase">
+        <span class="w-phase__number">02</span>
+        <img class="w-phase__img" src="{{ page.phase_images[1] }}" alt="Fotografía de boda - German Ostaszynski">
+        <h3 class="w-phase__title">Durante — La boda</h3>
+        <p class="w-phase__text">El día de la boda es puro presente. Trabajo desde las sombras — observando, anticipando, documentando cada emoción real. Las risas, las lágrimas, los silencios. Todo cuenta.</p>
+      </div>
+
+      <div class="w-phase">
+        <span class="w-phase__number">03</span>
+        <img class="w-phase__img" src="{{ page.phase_images[2] }}" alt="Sesión después de la boda - German Ostaszynski">
+        <h3 class="w-phase__title">Después — La post boda</h3>
+        <p class="w-phase__text">Con el vestido todavía puesto y la emoción fresca, una sesión íntima al día siguiente. Sin apuros, sin cronograma. Solo ustedes dos y la luz que queda.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COUPLES LIST -->
+  <section class="w-couples w-fade">
+    <p class="w-couples__label">Bodas recientes</p>
+    <div class="w-couples__grid">
+      {% assign wedding_posts = site.posts | where_exp: "p", "p.categories contains 'wedding'" %}
+      {% for post in wedding_posts limit: 6 %}
+      <a class="w-couple" href="{{ post.url | relative_url }}">
+        <div class="w-couple__img-wrap">
+          <img src="{{ post.thumbnail }}" alt="{{ post.title }} - German Ostaszynski fotografía de bodas">
+        </div>
+        <p class="w-couple__name">{{ post.title }}</p>
+        <p class="w-couple__meta">{{ post.date | date: "%Y" }} · {{ post.location | default: "Costa Rica" }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="w-cta w-fade">
+    <p class="w-cta__eyebrow">Tu historia merece ser contada</p>
+    <h2 class="w-cta__title">{{ page.cta_text }}</h2>
+    <a class="w-cta__btn" href="{{ page.cta_link }}">Escribime</a>
+  </section>
+
+</div>
 
 <script>
   const observer = new IntersectionObserver((entries) => {

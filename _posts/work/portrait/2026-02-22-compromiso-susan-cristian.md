@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Susan y Cristian
-categories: work portrait
+categories: work portrait wedding
 thumbnail: "/assets/images/work/portrait/compromiso-susan-cristian/compromiso-susan-cristian-14.jpg"
 image: "/assets/images/work/portrait/compromiso-susan-cristian/compromiso-susan-cristian-14.jpg"
 description: "Sesión de compromiso de Susan y Cristian en Costa Rica. Fotografía romántica y emotiva por German Ostaszynski."

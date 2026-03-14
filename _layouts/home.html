@@ -2,179 +2,110 @@
 layout: base
 ---
 
-<div class="home">
+<div class="page-home">
 
-  <!-- <div class="welcome-container">
-    <div class="welcome-item welcome-title">
-      <p>eventos &<br>                       retratos.</p>
-    </div>
-
-    <div class="welcome-item welcome-photo">
-      <img src=" {{ site.imagepath }}/home/welcome-photo.jpg " alt="Wedding Photo">
-    </div>
-  </div> -->
-
-  <div class="flex-container">
-    <h1 class="home-title">Fotógrafo de bodas y retratos en Costa Rica</h1>
-
-      <div class="flex-photo">
-        <img src="{{ site.baseurl }}/assets/images/home/welcome-photo.jpg" alt="Fotografía de Bodas">
+  <!-- HERO -->
+  <section class="h-hero">
+    <img
+      class="h-hero__img"
+      src="{{ page.hero_image }}"
+      alt="{{ page.description }}">
+    <div class="h-hero__text">
+      <p class="h-hero__eyebrow">German Ostaszynski · Costa Rica</p>
+      <h1 class="h-hero__title">{{ page.title }}</h1>
+      <div class="h-hero__links">
+        <a class="h-hero__link" href="/bodas/">Bodas</a>
+        <a class="h-hero__link" href="/eventos/">Eventos</a>
+        <a class="h-hero__link" href="/retratos/">Retratos</a>
       </div>
-
-    <br><br>
-
-    <p>
-      Soy German Ostaszynski, fotógrafo de bodas y retratos en Costa Rica.  
-      <br>
-      Mi trabajo se centra en capturar emociones reales, momentos honestos y la conexión auténtica entre las personas.
-      Trabajo desde una mirada documental y sensible, creando imágenes que no solo se ven, sino que se sienten.
-    </p>
-
-  </div>
-
-
-  <!-- <br><br>
-  <div class="flex-container">
-
-    <div class="flex-photo">      
-      <img src="{{ site.baseurl }}/assets/images/home/welcome-photo.jpg" alt="wedding">
     </div>
+  </section>
 
-    <div class="flex-description">
-      <p>
-        Fotografía de bodas, eventos y retrato.
-      </p>
-    </div> -->
-
-  </div>
-  <h2 class="home-title">Trabajos</h2>
-
-  <div class="flex-container">
-
-    <div class="flex-item">
-      <a href="{{site.baseurl}}/work">
-        <img src=" {{ site.baseurl }}/assets/images/home/wedding-2.jpg " alt="Wedding">
-        <div class="logo-overlay">
-          <img src="{{ site.baseurl }}/assets/images/logo-no-text.png" alt="Logo">
-        </div>
-        <p><b>Bodas</b></p>
-      </a>
+  <!-- INTRO -->
+  <section class="h-intro h-fade">
+    <div class="h-intro__text">
+      <span class="h-intro__label">El enfoque</span>
+      <p class="h-intro__statement">{{ page.statement }}</p>
     </div>
-
-    <div class="flex-item">
-      <a href="{{site.baseurl}}/work">
-        <img src=" {{ site.baseurl }}/assets/images/home/tali.jpg " alt="Portrait Tali">
-        <div class="logo-overlay">
-          <img src="{{ site.baseurl }}/assets/images/logo-no-text.png" alt="Logo">
-        </div>
-        <p><b>Retratos</b></p>
-      </a>
-    </div>
-
-    <div class="flex-item">
-      <a href="{{site.baseurl}}/projects">
-        <img src=" {{ site.baseurl }}/assets/images/projects/conceptual/ocean/ocean-1.jpg " alt="Ocean">
-        <div class="logo-overlay">
-          <img src="{{ site.baseurl }}/assets/images/logo-no-text.png" alt="Logo">
-        </div>
-        <p><b>Proyectos Personales</b></p>
-      </a>
-
-    </div>
-
-  </div>
-
-  <h2 class="home-title">Darkroom & Film Lab</h2>
-
-    <div class="flex-container">
-
-      <div class="flex-description">
-        <p>
-          Servicio de revelado de rollos blanco y negro y capacitaciones en cuarto oscuro.
-        </p>
+    <div class="h-intro__details">
+      <div class="h-intro__detail-item">
+        <span class="h-intro__detail-label">Especialidad</span>
+        <p class="h-intro__detail-value">Bodas · Eventos · Retratos</p>
       </div>
-
-      <div class="flex-photo">
-        <img src=" {{ site.baseurl }}/assets/images/film-dry.jpg " alt="Film">
+      <div class="h-intro__detail-item">
+        <span class="h-intro__detail-label">Estilo</span>
+        <p class="h-intro__detail-value">Documental · Emocional · Natural</p>
       </div>
-
+      <div class="h-intro__detail-item">
+        <span class="h-intro__detail-label">Sede</span>
+        <p class="h-intro__detail-value">San José, Costa Rica<br>Disponible para viajes</p>
+      </div>
     </div>
+  </section>
 
+  <!-- SERVICES -->
+  <section class="h-services">
+    <a class="h-service" href="/bodas/">
+      <img class="h-service__img" src="{{ page.service_images[0] }}" alt="Fotografía de bodas Costa Rica - German Ostaszynski">
+      <div class="h-service__content">
+        <span class="h-service__number">01</span>
+        <h2 class="h-service__title">Bodas</h2>
+        <p class="h-service__desc">Momentos honestos, emociones reales. Documento tu historia sin interrumpirla.</p>
+        <span class="h-service__arrow">Ver bodas</span>
+      </div>
+    </a>
 
-  <h2 class="home-title">Conversemos</h2>
-  <h2>Si conectas con esta forma de mirar y sentir la fotografía,
-puedes escribirme para hablar sobre tu boda, una sesión de retrato
-o un proyecto personal.</h2>
+    <a class="h-service" href="/eventos/">
+      <img class="h-service__img" src="{{ page.service_images[1] }}" alt="Fotografía de eventos Costa Rica - German Ostaszynski">
+      <div class="h-service__content">
+        <span class="h-service__number">02</span>
+        <h2 class="h-service__title">Eventos</h2>
+        <p class="h-service__desc">Bar mitzvahs, cumpleaños, celebraciones. Cada evento tiene su propio ritmo y su propia luz.</p>
+        <span class="h-service__arrow">Ver eventos</span>
+      </div>
+    </a>
 
-  <div class="contact-container">
-    <a href="mailto:{{ site.author.email }}"><i class="fa-regular fa-envelope"></i></a>
-    <a href="https://www.instagram.com/germanosta.photo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/in/german92/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-  </div>
+    <a class="h-service" href="/retratos/">
+      <img class="h-service__img" src="{{ page.service_images[2] }}" alt="Fotografía de retratos Costa Rica - German Ostaszynski">
+      <div class="h-service__content">
+        <span class="h-service__number">03</span>
+        <h2 class="h-service__title">Retratos</h2>
+        <p class="h-service__desc">Sesiones que capturan quien sos realmente — sin poses forzadas, sin artificios.</p>
+        <span class="h-service__arrow">Ver retratos</span>
+      </div>
+    </a>
+  </section>
 
+  <!-- ABOUT STRIP -->
+  <section class="h-about h-fade">
+    <div class="h-about__img-wrap">
+      <img class="h-about__img" src="{{ page.about_image }}" alt="German Ostaszynski fotógrafo de bodas Costa Rica">
+    </div>
+    <div class="h-about__content">
+      <span class="h-about__label">Sobre mí</span>
+      <p class="h-about__text">{{ page.about_text }}</p>
+      <a class="h-about__link" href="/about/">Conoceme mejor</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="h-cta h-fade">
+    <p class="h-cta__eyebrow">¿Tenés un proyecto en mente?</p>
+    <h2 class="h-cta__title">{{ page.cta_text }}</h2>
+    <a class="h-cta__btn" href="{{ page.cta_link }}">Escribime</a>
+  </section>
 
 </div>
 
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
 
-
-
-
-
-  <!-- {{ content }} -->
-
-
-  <!-- {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.minima.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li>
-            <a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page" title="Go to Page {{ paginator.previous_page }}">
-              {{ paginator.previous_page }}
-            </a>
-          </li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li>
-            <a href="{{ paginator.next_page_path | relative_url }}" class="next-page" title="Go to Page {{ paginator.next_page }}">
-              {{ paginator.next_page }}
-            </a>
-          </li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
-      </div>
-    {%- endif %}
-  {%- endif -%}
-</div> -->
+  document.querySelectorAll('.h-fade').forEach(el => observer.observe(el));
+</script>
