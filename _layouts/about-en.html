@@ -1,0 +1,62 @@
+---
+layout: base
+---
+
+<div class="page-about">
+
+  <!-- HERO -->
+  <section class="a-hero">
+    <div class="a-hero__img-wrap">
+      <img class="a-hero__img" src="{{ page.photo }}" alt="German Ostaszynski wedding photographer Costa Rica">
+    </div>
+    <div class="a-hero__text">
+      <p class="a-hero__eyebrow">San José, Costa Rica</p>
+      <h1 class="a-hero__name">{{ page.title }}</h1>
+      <p class="a-hero__role">{{ page.role }}</p>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="a-bio a-fade">
+    <div class="a-bio__inner">
+      <div class="a-bio__left">
+        <p class="a-bio__label">About me</p>
+      </div>
+      <div class="a-bio__right">
+        {% for paragraph in page.bio %}
+        <p class="a-bio__text">{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="a-values a-fade">
+    <div class="a-values__inner">
+      {% for value in page.values %}
+      <div class="a-value">
+        <span class="a-value__number">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+        <h3 class="a-value__title">{{ value.title }}</h3>
+        <p class="a-value__text">{{ value.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  {% include contact-form-en.html %}
+
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.a-fade').forEach(el => observer.observe(el));
+</script>

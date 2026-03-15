@@ -1,0 +1,107 @@
+---
+layout: base
+---
+
+<div class="page-home">
+
+  <!-- HERO -->
+  <section class="h-hero">
+    <img
+      class="h-hero__img"
+      src="{{ page.hero_image }}"
+      alt="{{ page.description }}">
+    <div class="h-hero__text">
+      <p class="h-hero__eyebrow">German Ostaszynski · Costa Rica</p>
+      <h1 class="h-hero__title">{{ page.title }}</h1>
+      <div class="h-hero__links">
+        <a class="h-hero__link" href="/en/weddings/">Weddings</a>
+        <a class="h-hero__link" href="/en/events/">Events</a>
+        <a class="h-hero__link" href="/en/portraits/">Portraits</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="h-intro h-fade">
+    <div class="h-intro__text">
+      <span class="h-intro__label">The approach</span>
+      <p class="h-intro__statement">{{ page.statement }}</p>
+    </div>
+    <div class="h-intro__details">
+      <div class="h-intro__detail-item">
+        <span class="h-intro__detail-label">Specialty</span>
+        <p class="h-intro__detail-value">Weddings · Events · Portraits</p>
+      </div>
+      <div class="h-intro__detail-item">
+        <span class="h-intro__detail-label">Style</span>
+        <p class="h-intro__detail-value">Documentary · Emotional · Natural</p>
+      </div>
+      <div class="h-intro__detail-item">
+        <span class="h-intro__detail-label">Based in</span>
+        <p class="h-intro__detail-value">San José, Costa Rica<br>Available for destination</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="h-services">
+    <a class="h-service" href="/en/weddings/">
+      <img class="h-service__img" src="{{ page.service_images[0] }}" alt="Wedding photographer Costa Rica - German Ostaszynski">
+      <div class="h-service__content">
+        <span class="h-service__number">01</span>
+        <h2 class="h-service__title">Weddings</h2>
+        <p class="h-service__desc">Honest moments, real emotions. I document your story without interrupting it.</p>
+        <span class="h-service__arrow">View weddings</span>
+      </div>
+    </a>
+
+    <a class="h-service" href="/en/events/">
+      <img class="h-service__img" src="{{ page.service_images[1] }}" alt="Event photographer Costa Rica - German Ostaszynski">
+      <div class="h-service__content">
+        <span class="h-service__number">02</span>
+        <h2 class="h-service__title">Events</h2>
+        <p class="h-service__desc">Bar Mitzvahs, birthdays, celebrations. Every event has its own rhythm and its own light.</p>
+        <span class="h-service__arrow">View events</span>
+      </div>
+    </a>
+
+    <a class="h-service" href="/en/portraits/">
+      <img class="h-service__img" src="{{ page.service_images[2] }}" alt="Portrait photographer Costa Rica - German Ostaszynski">
+      <div class="h-service__content">
+        <span class="h-service__number">03</span>
+        <h2 class="h-service__title">Portraits</h2>
+        <p class="h-service__desc">Sessions that capture who you really are — no forced poses, no artifice.</p>
+        <span class="h-service__arrow">View portraits</span>
+      </div>
+    </a>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="h-about h-fade">
+    <div class="h-about__img-wrap">
+      <img class="h-about__img" src="{{ page.about_image }}" alt="German Ostaszynski wedding photographer Costa Rica">
+    </div>
+    <div class="h-about__content">
+      <span class="h-about__label">About me</span>
+      <p class="h-about__text">{{ page.about_text }}</p>
+      <a class="h-about__link" href="/en/about/">Get to know me</a>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  {% include contact-form-en.html %}
+
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.h-fade').forEach(el => observer.observe(el));
+</script>

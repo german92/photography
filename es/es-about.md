@@ -1,8 +1,9 @@
 ---
 layout: about
 title: "German Ostaszynski"
-permalink: /acerca/
+permalink: /about/
 description: "Fotógrafo documental de bodas, eventos y retratos en Costa Rica. Conozca a German Ostaszynski y su enfoque en fotografía emocional y natural."
+lang: es
 role: "Fotógrafo documental · Costa Rica"
 photo: "/assets/images/home/retratos/autoretrato-german-fotografo.jpg"
 
@@ -18,10 +19,4 @@ values:
     text: "Mi trabajo empieza mucho antes de apretar el obturador. Se trata de crear un ambiente donde la gente se olvide de la cámara."
   - title: "Conexión"
     text: "Cada sesión es diferente porque cada persona es diferente. Me interesa entender quién sos antes de fotografiarte."
-
-contact_title: "Hablemos"
-contact_text: "Si conectás con esta forma de ver la fotografía, me encantaría escuchar sobre tu proyecto. Escribime por cualquiera de estos medios o completá el formulario."
-whatsapp: "50688872213"
-email: "german92@gmail.com"
-formspree_url: "https://formspree.io/f/mwvrqrwz"
 ---

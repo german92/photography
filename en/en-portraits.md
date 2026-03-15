@@ -1,18 +1,17 @@
 ---
-layout: portrait
-title: "Retratos"
-permalink: /retratos/
-description: "Fotografía de retratos en Costa Rica — individuales, familias, embarazo y profesional. German Ostaszynski captura la esencia real de las personas."
-statement: "Una buena foto de retrato no muestra cómo te ves — muestra quién sos."
-quote: "Las mejores imágenes son las que te sorprenden a vos mismo."
-types_intro: "Cada sesión es diferente porque cada persona es diferente. Trabajo con luz natural, en locaciones que tengan sentido para vos."
-cta_eyebrow: "¿Querés una sesión?"
-cta_text: "Hablemos sobre lo que tenés en mente"
-cta_link: "https://wa.me/50688872213"
-
-manifesto: "Trabajo desde la cercanía. Me tomo el tiempo para que te olvides de la cámara — y es en ese momento cuando aparece la foto que vale la pena."
+layout: portraits-en
+title: "Portraits"
+permalink: /en/portraits/
+lang: en
+description: "Portrait photographer in Costa Rica — individuals, families, maternity and professional. German Ostaszynski captures the real essence of people."
+statement: "A good portrait doesn't show how you look — it shows who you are."
+quote: "The best images are the ones that surprise even you."
+types_intro: "Every session is different because every person is different. I work with natural light, in locations that make sense for you."
+cta_eyebrow: "Want a session?"
+cta_text: "Tell me what you have in mind"
+cta_link: "/en/about/#contact"
+manifesto: "I work from closeness. I take the time for you to forget about the camera — and that's when the photo worth taking appears."
 manifesto_image: "/assets/images/work/portrait/compromiso-cinthya-luis/compromiso-cinthya-luis-24.jpg"
-
 hero_image: "/assets/images/work/portrait/compromiso-andrea-ariel/compromiso-andrea-ariel-14.jpg"
 
 strip_images:

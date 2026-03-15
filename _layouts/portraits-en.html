@@ -1,0 +1,152 @@
+---
+layout: base
+---
+
+<div class="page-retratos">
+
+  <!-- HERO -->
+  <section class="r-hero">
+    <div class="r-hero__img-wrap">
+      <img class="r-hero__img" src="{{ page.hero_image }}" alt="{{ page.description }}">
+    </div>
+    <div class="r-hero__content">
+      <div class="r-hero__content-inner">
+        <p class="r-hero__eyebrow">Portraits · Families · Maternity · Professional</p>
+        <h1 class="r-hero__title">{{ page.title }}</h1>
+        <p class="r-hero__statement">{{ page.statement }}</p>
+        <a class="r-hero__cta" href="{{ page.cta_link }}">Book your session</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="r-quote r-fade">
+    <blockquote class="r-quote__text">{{ page.quote }}</blockquote>
+  </section>
+
+  <!-- STRIP -->
+  <section class="r-strip r-fade">
+    {% if page.strip_images %}
+    {% for img in page.strip_images %}
+    <div class="r-strip__item">
+      <img src="{{ img }}" alt="{{ page.description }}">
+    </div>
+    {% endfor %}
+    {% endif %}
+  </section>
+
+  <!-- DARK GREEN MANIFESTO -->
+  <section class="r-manifesto r-fade">
+    <div class="r-manifesto__inner">
+      <p class="r-manifesto__label">The approach</p>
+      <p class="r-manifesto__text">{{ page.manifesto }}</p>
+      <a class="r-manifesto__link" href="{{ page.cta_link }}">Book your session</a>
+    </div>
+    <div class="r-manifesto__img-wrap">
+      <img src="{{ page.manifesto_image }}" alt="{{ page.description }}">
+    </div>
+  </section>
+
+  <!-- PORTRAIT TYPES -->
+  <section class="r-types r-fade">
+    <div class="r-types__left">
+      <p class="r-types__label">Sessions</p>
+      <p class="r-types__intro">{{ page.types_intro }}</p>
+    </div>
+    <div class="r-types__right">
+
+      <div class="r-type">
+        <div class="r-type__header">
+          <span class="r-type__number">01</span>
+          <h3 class="r-type__title">Individual Portrait</h3>
+        </div>
+        <p class="r-type__text">A session designed for you. No pressure, no forced poses. I work to show your essence — the one that usually doesn't come through in photos.</p>
+      </div>
+
+      <div class="r-type">
+        <div class="r-type__header">
+          <span class="r-type__number">02</span>
+          <h3 class="r-type__title">Families</h3>
+        </div>
+        <p class="r-type__text">The real dynamic of your family — the laughs, the gestures, the complicity. Not the stiff portrait with everyone staring at the camera, but the one that will move you in 20 years.</p>
+      </div>
+
+      <div class="r-type">
+        <div class="r-type__header">
+          <span class="r-type__number">03</span>
+          <h3 class="r-type__title">Maternity</h3>
+        </div>
+        <p class="r-type__text">A unique moment that deserves to be documented with sensitivity. Intimate sessions, with natural light, that celebrate this time without artifice.</p>
+      </div>
+
+      <div class="r-type">
+        <div class="r-type__header">
+          <span class="r-type__number">04</span>
+          <h3 class="r-type__title">Professional</h3>
+        </div>
+        <p class="r-type__text">Headshots and corporate portraits that communicate who you are — not just how you look. For LinkedIn, websites, press, or whatever you need.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURED GRID -->
+  <section class="r-featured r-fade">
+    {% if page.featured_images %}
+    <div class="r-featured__row r-featured__row--a">
+      <div class="r-featured__item r-featured__item--large">
+        <img src="{{ page.featured_images[0] }}" alt="{{ page.description }}">
+      </div>
+      <div class="r-featured__item r-featured__item--small">
+        <img src="{{ page.featured_images[1] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    <div class="r-featured__row r-featured__row--b">
+      <div class="r-featured__item r-featured__item--small">
+        <img src="{{ page.featured_images[2] }}" alt="{{ page.description }}">
+      </div>
+      <div class="r-featured__item r-featured__item--large">
+        <img src="{{ page.featured_images[3] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- RECENT PORTRAITS -->
+  <section class="r-recent r-fade">
+    <p class="r-recent__label">Recent sessions</p>
+    <div class="r-recent__grid">
+      {% assign portrait_posts = site.posts | where_exp: "p", "p.categories contains 'portrait'" %}
+      {% for post in portrait_posts limit: 6 %}
+      <a class="r-item" href="{{ post.url | relative_url }}">
+        <div class="r-item__img-wrap">
+          <img src="{{ post.thumbnail }}" alt="{{ post.title }} - German Ostaszynski portraits">
+        </div>
+        <p class="r-item__name">{{ post.title }}</p>
+        <p class="r-item__meta">{{ post.date | date: "%Y" }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="r-cta r-fade">
+    <p class="r-cta__eyebrow">{{ page.cta_eyebrow }}</p>
+    <h2 class="r-cta__title">{{ page.cta_text }}</h2>
+    <a class="r-cta__btn" href="{{ page.cta_link }}">Get in touch</a>
+  </section>
+
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.r-fade').forEach(el => observer.observe(el));
+</script>

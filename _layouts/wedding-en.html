@@ -1,0 +1,124 @@
+---
+layout: base
+---
+
+<div class="page-wedding">
+
+  <!-- HERO -->
+  <section class="w-hero">
+    <img
+      class="w-hero__img"
+      src="{{ page.hero_image }}"
+      alt="{{ page.description }}">
+    <div class="w-hero__text">
+      <p class="w-hero__eyebrow">natural · spontaneous · different</p>
+      <h1 class="w-hero__title">{{ page.title }}</h1>
+      <span class="w-hero__scroll">Costa Rica</span>
+    </div>
+  </section>
+
+  <!-- MANIFESTO -->
+  <section class="w-manifesto w-fade">
+    <p class="w-manifesto__text">{{ page.manifesto }}</p>
+  </section>
+
+  <!-- EDITORIAL GRID -->
+  <section class="w-grid">
+    {% if page.grid_images %}
+    <div class="w-grid__row w-grid__row--hero w-fade">
+      <div class="w-grid__item w-grid__item--tall">
+        <img src="{{ page.grid_images[0] }}" alt="{{ page.description }}">
+      </div>
+      <div class="w-grid__item w-grid__item--tall">
+        <img src="{{ page.grid_images[1] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    <div class="w-grid__row w-grid__row--3 w-fade">
+      <div class="w-grid__item w-grid__item--mid">
+        <img src="{{ page.grid_images[2] }}" alt="{{ page.description }}">
+      </div>
+      <div class="w-grid__item w-grid__item--mid">
+        <img src="{{ page.grid_images[3] }}" alt="{{ page.description }}">
+      </div>
+      <div class="w-grid__item w-grid__item--mid">
+        <img src="{{ page.grid_images[4] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    <div class="w-grid__row w-grid__row--hero-r w-fade">
+      <div class="w-grid__item w-grid__item--mid">
+        <img src="{{ page.grid_images[5] }}" alt="{{ page.description }}">
+      </div>
+      <div class="w-grid__item w-grid__item--tall">
+        <img src="{{ page.grid_images[6] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- STORY PHASES -->
+  <section class="w-phases w-fade">
+    <p class="w-phases__label">A complete story</p>
+    <div class="w-phases__grid">
+
+      <div class="w-phase">
+        <span class="w-phase__number">01</span>
+        <img class="w-phase__img" src="{{ page.phase_images[0] }}" alt="Engagement session - German Ostaszynski">
+        <h3 class="w-phase__title">Before — The engagement</h3>
+        <p class="w-phase__text">The engagement session is the first chapter. A moment to get to know each other, for you to forget about the camera, and for us to start building the story together. No poses. No scripts.</p>
+      </div>
+
+      <div class="w-phase">
+        <span class="w-phase__number">02</span>
+        <img class="w-phase__img" src="{{ page.phase_images[1] }}" alt="Wedding photography - German Ostaszynski">
+        <h3 class="w-phase__title">During — The wedding</h3>
+        <p class="w-phase__text">Your wedding day is pure presence. I work from the shadows — observing, anticipating, documenting every real emotion. The laughter, the tears, the silence. Everything counts.</p>
+      </div>
+
+      <div class="w-phase">
+        <span class="w-phase__number">03</span>
+        <img class="w-phase__img" src="{{ page.phase_images[2] }}" alt="After wedding session - German Ostaszynski">
+        <h3 class="w-phase__title">After — The post-wedding session</h3>
+        <p class="w-phase__text">With the dress still on and the emotion fresh, an intimate session the day after. No rush, no schedule. Just the two of you and whatever light remains.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COUPLES LIST -->
+  <section class="w-couples w-fade">
+    <p class="w-couples__label">Recent weddings</p>
+    <div class="w-couples__grid">
+      {% assign wedding_posts = site.posts | where_exp: "p", "p.categories contains 'wedding'" %}
+      {% for post in wedding_posts limit: 6 %}
+      <a class="w-couple" href="{{ post.url | relative_url }}">
+        <div class="w-couple__img-wrap">
+          <img src="{{ post.thumbnail }}" alt="{{ post.title }} - German Ostaszynski wedding photography">
+        </div>
+        <p class="w-couple__name">{{ post.title }}</p>
+        <p class="w-couple__meta">{{ post.date | date: "%Y" }} · {{ post.location | default: "Costa Rica" }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="w-cta w-fade">
+    <p class="w-cta__eyebrow">Your story deserves to be told</p>
+    <h2 class="w-cta__title">{{ page.cta_text }}</h2>
+    <a class="w-cta__btn" href="{{ page.cta_link }}">Get in touch</a>
+  </section>
+
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.w-fade').forEach(el => observer.observe(el));
+</script>

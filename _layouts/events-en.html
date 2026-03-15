@@ -1,0 +1,141 @@
+---
+layout: base
+---
+
+<div class="page-eventos">
+
+  <!-- HERO -->
+  <section class="e-hero">
+    <img
+      class="e-hero__img"
+      src="{{ page.hero_image }}"
+      alt="{{ page.description }}">
+    <div class="e-hero__overlay"></div>
+    <div class="e-hero__text">
+      <p class="e-hero__eyebrow">Bar Mitzvahs · Birthdays · Corporate · Celebrations</p>
+      <h1 class="e-hero__title">{{ page.title }}</h1>
+      <p class="e-hero__sub">{{ page.subtitle }}</p>
+    </div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="e-statement e-fade">
+    <div class="e-statement__inner">
+      <p class="e-statement__text">{{ page.statement }}</p>
+      <span class="e-statement__line"></span>
+    </div>
+  </section>
+
+  <!-- MOSAIC -->
+  <section class="e-mosaic e-fade">
+    {% if page.mosaic_images %}
+    <div class="e-mosaic__col e-mosaic__col--left">
+      <div class="e-mosaic__item e-mosaic__item--tall">
+        <img src="{{ page.mosaic_images[0] }}" alt="{{ page.description }}">
+      </div>
+      <div class="e-mosaic__item e-mosaic__item--short">
+        <img src="{{ page.mosaic_images[1] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    <div class="e-mosaic__col e-mosaic__col--center">
+      <div class="e-mosaic__item e-mosaic__item--short">
+        <img src="{{ page.mosaic_images[2] }}" alt="{{ page.description }}">
+      </div>
+      <div class="e-mosaic__item e-mosaic__item--tall">
+        <img src="{{ page.mosaic_images[3] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    <div class="e-mosaic__col e-mosaic__col--right">
+      <div class="e-mosaic__item e-mosaic__item--mid">
+        <img src="{{ page.mosaic_images[4] }}" alt="{{ page.description }}">
+      </div>
+      <div class="e-mosaic__item e-mosaic__item--mid">
+        <img src="{{ page.mosaic_images[5] }}" alt="{{ page.description }}">
+      </div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- EVENT TYPES -->
+  <section class="e-types e-fade">
+    <p class="e-types__label">What I document</p>
+    <div class="e-types__grid">
+
+      <div class="e-type">
+        <span class="e-type__number">01</span>
+        <h3 class="e-type__title">Bar & Bat Mitzvahs</h3>
+        <p class="e-type__text">A unique rite of passage. The emotion of family, the energy of celebration, the intimate moments between generations. All in a single day.</p>
+      </div>
+
+      <div class="e-type">
+        <span class="e-type__number">02</span>
+        <h3 class="e-type__title">Birthdays</h3>
+        <p class="e-type__text">From the earliest years to the big milestones. Every birthday has its own light, its own rhythm. I capture it without interrupting the celebration.</p>
+      </div>
+
+      <div class="e-type">
+        <span class="e-type__number">03</span>
+        <h3 class="e-type__title">Corporate Events</h3>
+        <p class="e-type__text">Launches, conferences, team buildings. Images that communicate professionalism and show the human side of your company.</p>
+      </div>
+
+      <div class="e-type">
+        <span class="e-type__number">04</span>
+        <h3 class="e-type__title">Celebrations</h3>
+        <p class="e-type__text">Graduations, anniversaries, family gatherings. If it's worth celebrating, it's worth documenting well.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FULL WIDTH IMAGE -->
+  {% if page.full_image %}
+  <section class="e-fullwidth e-fade">
+    <img src="{{ page.full_image }}" alt="{{ page.description }}">
+    <div class="e-fullwidth__caption">{{ page.full_image_caption }}</div>
+  </section>
+  {% endif %}
+
+  <!-- RECENT EVENTS -->
+  <section class="e-recent e-fade">
+    <p class="e-recent__label">Recent events</p>
+    <div class="e-recent__grid">
+      {% assign event_posts = site.posts | where_exp: "p", "p.categories contains 'portrait'" %}
+      {% for post in event_posts limit: 6 %}
+      <a class="e-item" href="{{ post.url | relative_url }}">
+        <div class="e-item__img-wrap">
+          <img src="{{ post.thumbnail }}" alt="{{ post.title }} - German Ostaszynski">
+          <div class="e-item__hover">
+            <span class="e-item__see">View gallery →</span>
+          </div>
+        </div>
+        <p class="e-item__name">{{ post.title }}</p>
+        <p class="e-item__meta">{{ post.date | date: "%Y" }} · {{ post.location | default: "Costa Rica" }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="e-cta e-fade">
+    <div class="e-cta__inner">
+      <p class="e-cta__eyebrow">Got an upcoming event?</p>
+      <h2 class="e-cta__title">{{ page.cta_text }}</h2>
+      <a class="e-cta__btn" href="{{ page.cta_link }}">Let's talk</a>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.e-fade').forEach(el => observer.observe(el));
+</script>
