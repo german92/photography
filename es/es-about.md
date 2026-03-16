@@ -4,6 +4,7 @@ title: "German Ostaszynski"
 permalink: /about/
 description: "Fotógrafo documental de bodas, eventos y retratos en Costa Rica. Conozca a German Ostaszynski y su enfoque en fotografía emocional y natural."
 lang: es
+translation: "/en/about/"
 role: "Fotógrafo documental · Costa Rica"
 photo: "/assets/images/home/retratos/autoretrato-german-fotografo.jpg"
 

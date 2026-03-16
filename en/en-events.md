@@ -3,6 +3,7 @@ layout: events-en
 title: "Event Photography"
 permalink: /en/events/
 lang: en
+translation: "/eventos/" 
 description: "Event photographer in Costa Rica — Bar Mitzvahs, birthdays, corporate events and celebrations. German Ostaszynski captures the energy and real moments of every event."
 subtitle: "Every event has its own energy. I document it."
 statement: "The best moments at an event aren't planned — they just happen. My job is to be ready when they do."

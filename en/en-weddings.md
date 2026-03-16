@@ -3,6 +3,7 @@ layout: wedding-en
 title: "Wedding Photography"
 permalink: /en/weddings/
 lang: en
+translation: "/bodas/" 
 description: "Documentary wedding photographer in Costa Rica. German Ostaszynski captures honest moments and real emotions — available for destination weddings worldwide."
 manifesto: "I don't interrupt your wedding. I observe it. I document the moments that happen between the planned ones — because that's where the real story lives."
 cta_text: "Ready to tell your story?"

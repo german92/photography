@@ -4,6 +4,7 @@ title: "Fotografía de Bodas"
 permalink: /bodas/
 description: "Fotografía de bodas documental y emocional en Costa Rica. German Ostaszynski captura momentos honestos, conexión real y la esencia de cada pareja."
 lang: es
+translation: "/en/weddings/"
 manifesto: "No dirijo. No poso. Simplemente estoy presente — con los ojos abiertos y el corazón atento — esperando el momento en que todo se vuelve real. *Eso es lo que fotografío.*"
 cta_text: "¿Querés que cuente la historia de tu boda?"
 cta_link: "https://wa.me/50688872213"

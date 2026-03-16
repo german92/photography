@@ -3,6 +3,7 @@ layout: portraits-en
 title: "Portraits"
 permalink: /en/portraits/
 lang: en
+translation: "/retratos/" 
 description: "Portrait photographer in Costa Rica — individuals, families, maternity and professional. German Ostaszynski captures the real essence of people."
 statement: "A good portrait doesn't show how you look — it shows who you are."
 quote: "The best images are the ones that surprise even you."

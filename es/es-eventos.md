@@ -4,6 +4,7 @@ title: "Fotografía de Eventos"
 permalink: /eventos/
 description: "Fotografía de eventos en Costa Rica — Bar Mitzvahs, cumpleaños, corporativos y celebraciones. German Ostaszynski captura la energía y los momentos reales de cada evento."
 lang: es
+translation: "/en/events/"
 subtitle: "Cada evento tiene su propia energía. Yo la documento."
 statement: "Los mejores momentos de un evento no se planean — simplemente ocurren. Mi trabajo es estar listo cuando eso pasa."
 cta_text: "Contame sobre tu próximo evento"

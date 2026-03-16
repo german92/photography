@@ -3,6 +3,7 @@ layout: about-en
 title: "German Ostaszynski"
 permalink: /en/about/
 lang: en
+translation: "/about/" 
 description: "Documentary wedding and portrait photographer based in Costa Rica. Available for destination weddings throughout Latin America and worldwide."
 role: "Documentary photographer · Costa Rica"
 photo: "/assets/images/home/retratos/autoretrato-german-fotografo.jpg"
