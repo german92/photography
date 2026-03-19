@@ -10,7 +10,7 @@ photo: "/assets/images/home/retratos/autoretrato-german-fotografo.jpg"
 
 bio:
   - "Soy German Ostaszynski, fotógrafo con sede en San José, Costa Rica. Trabajo principalmente en bodas, eventos y retratos — siempre desde una mirada documental y sensible."
-  - "Mi enfoque no es dirigir ni posar. Es observar, anticipar y estar presente en el momento justo. Creo que las mejores fotos son las que la gente no sabe que le están sacando."
+  - "Mi enfoque es observar, anticipar y estar presente en el momento justo. Creo que las mejores fotos son las que la gente sale natural y se peude mostrar su esencia."
   - "Trabajo con luz natural y en locaciones que tengan sentido para cada persona o pareja. No tengo un estilo único de iluminación ni un set predeterminado — me adapto a cada historia."
 
 values:

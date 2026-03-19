@@ -6,7 +6,7 @@ lang: en
 translation: "/retratos/" 
 description: "Portrait photographer in Costa Rica — individuals, families, maternity and professional. German Ostaszynski captures the real essence of people."
 statement: "A good portrait doesn't show how you look — it shows who you are."
-quote: "The best images are the ones that surprise even you."
+quote: "The best images are the ones that show your essence."
 types_intro: "Every session is different because every person is different. I work with natural light, in locations that make sense for you."
 cta_eyebrow: "Want a session?"
 cta_text: "Tell me what you have in mind"

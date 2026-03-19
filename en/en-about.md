@@ -10,7 +10,7 @@ photo: "/assets/images/home/retratos/autoretrato-german-fotografo.jpg"
 
 bio:
   - "I'm German Ostaszynski, a documentary photographer based in San José, Costa Rica. I specialize in weddings, events and portraits — always through a sensitive, observational lens."
-  - "I don't direct or pose. I observe, anticipate and stay present in the right moment. I believe the best photos are the ones people don't know are being taken — the ones where real life is happening."
+  - "I observe, anticipate and stay present in the right moment. I believe the best photos are the ones people are most natural and shows their essence — the ones where real life is happening."
   - "I'm available for destination weddings throughout Costa Rica, Latin America, and internationally. If you're planning a wedding in Costa Rica or anywhere else in the world, I'd love to be part of your story."
 
 values:
