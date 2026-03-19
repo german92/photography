@@ -6,7 +6,7 @@ description: "Fotografía de eventos en Costa Rica — Bar Mitzvahs, cumpleaños
 lang: es
 translation: "/en/events/"
 subtitle: "Cada evento tiene su propia energía. Yo la documento."
-statement: "Los mejores momentos de un evento no se planean — simplemente ocurren. Mi trabajo es estar listo cuando eso pasa."
+statement: "Los mejores momentos de un evento no se planean, simplemente pasan. Mi trabajo es estar ahí para capturarlos."
 cta_text: "Contame sobre tu próximo evento"
 cta_link: "https://wa.me/50688872213"
 full_image_caption: "Bar Mitzvah · San José, Costa Rica"

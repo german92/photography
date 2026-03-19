@@ -5,9 +5,9 @@ permalink: /retratos/
 description: "Fotografía de retratos en Costa Rica — individuales, familias, embarazo y profesional. German Ostaszynski captura la esencia real de las personas."
 lang: es
 translation: "/en/portraits/"
-statement: "Una buena foto de retrato no muestra cómo se ves — muestra quién es."
-quote: "Las mejores retratos son las que muestran su esencia."
-types_intro: "Cada sesión es diferente porque cada persona es diferente. Trabajo con luz natural, en locaciones que tengan sentido para vos."
+statement: "Un buen retrato no muestra cómo te ves, muestra quién sos."
+quote: "Los mejores retratos son los que muestran tu esencia."
+types_intro: "Cada sesión es distinta, al igual que cada persona. Trabajo con luz natural, en lugares que tengan sentido para vos."
 cta_eyebrow: "¿Querés una sesión?"
 cta_text: "Hablemos sobre lo que tenés en mente"
 cta_link: "https://wa.me/50688872213"
