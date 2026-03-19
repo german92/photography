@@ -1,7 +1,7 @@
 ---
 layout: post
 title: María José y Bernardo
-categories: work portrait wedding
+categories: work wedding
 thumbnail: "/assets/images/work/portrait/boda-mariajoseybernardo/boda-mariajoseybernardo-32.jpg"
 image: "/assets/images/work/portrait/boda-mariajoseybernardo/boda-mariajoseybernardo-32.jpg"
 description: "Boda de María José y Bernardo en Costa Rica. Reportaje fotográfico documental y emocional por German Ostaszynski."

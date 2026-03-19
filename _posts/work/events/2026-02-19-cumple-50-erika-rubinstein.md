@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Erika Rubinstein
-categories: work portrait
+categories: work 
 thumbnail: "/assets/images/work/portrait/cumple50-erika-rubinstein/Erika-Rubinstein-5.jpg"
 image: "/assets/images/work/portrait/cumple50-erika-rubinstein/Erika-Rubinstein-5.jpg"
 description: "Celebración de 50 años de Erika Rubinstein en Costa Rica. Fotografía de evento y retrato por German Ostaszynski."

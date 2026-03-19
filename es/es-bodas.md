@@ -17,11 +17,11 @@ phase_images:
   - "/assets/images/work/portrait/compromiso-cinthya-luis/compromiso-cinthya-luis-24.jpg"
 
 grid_images:
-  - "/assets/images/work/portrait/boda-juanca-toti/boda-juanca-toti-33.jpg"
-  - "/assets/images/work/portrait/compromiso-susan-cristian/compromiso-susan-cristian-14.jpg"
-  - "/assets/images/work/portrait/compromiso-andrea-ariel/compromiso-andrea-ariel-14.jpg"
+  - "/assets/images/work/portrait/boda-juanca-toti/boda-juanca-toti-12.jpg"
+  - "/assets/images/work/portrait/juanca-GR/juanca-GR-9.jpg"
+  - "/assets/images/work/portrait/boda-juanca-toti/boda-juanca-toti-41.jpg"
   - "/assets/images/work/portrait/boda-mariajoseybernardo/boda-mariajoseybernardo-32.jpg"
   - "/assets/images/work/portrait/compromiso-cinthya-luis/compromiso-cinthya-luis-24.jpg"
-  - "/assets/images/work/portrait/juanca-GR/juanca-GR-9.jpg"
-  - "/assets/images/work/portrait/boda-mariajoseybernardo/boda-mariajoseybernardo-32.jpg"
+  - "/assets/images/work/portrait/compromiso-susan-cristian/compromiso-susan-cristian-14.jpg"
+  - "/assets/images/work/portrait/compromiso-andrea-ariel/compromiso-andrea-ariel-10.jpg"
 ---

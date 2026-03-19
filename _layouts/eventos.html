@@ -98,9 +98,9 @@ layout: base
 
   <!-- RECENT EVENTS -->
   <section class="e-recent e-fade">
-    <p class="e-recent__label">Eventos recientes</p>
+    <p class="e-recent__label">Galerias</p>
     <div class="e-recent__grid">
-      {% assign event_posts = site.posts | where_exp: "p", "p.categories contains 'portrait'" %}
+      {% assign event_posts = site.posts | where_exp: "p", "p.categories contains 'event'" %}
       {% for post in event_posts limit: 6 %}
       <a class="e-item" href="{{ post.url | relative_url }}">
         <div class="e-item__img-wrap">
