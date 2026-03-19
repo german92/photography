@@ -267,7 +267,7 @@ body {
 
 .contact__link {
   font-size: 0.82rem;
-  color: rgb(32, 69, 25) !important;
+  color: rgb(32, 69, 25);
   text-decoration: none;
   opacity: 0.6;
   display: flex;
@@ -825,6 +825,7 @@ body:has(.page-eventos) {
     justify-content: center;
     text-align: center;
     margin-top: -60px;
+    padding-top: 60px;
   }
 
   .e-hero__img {
