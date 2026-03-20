@@ -15,9 +15,9 @@ bio:
 
 values:
   - title: "Responsabilidad"
-    text: "Me hago cargo de todo lo fotográfico de principio a fin, para que puedas vivir la experiencia con tranquilidad.."
+    text: "Me hago cargo de todo el proceso fotográfico de principio a fin, para que puedas vivir la experiencia con tranquilidad."
   - title: "Autenticidad"
-    text: "No fuerzo momentos ni dirigir desde la pose vacía. Trabajo desde lo real, aunque sea imperfecto."
+    text: "Fotografío lo que realmente pasa, no lo que debería pasar. Sin poses ni momentos forzados."
   - title: "Conexión"
-    text: "Cada sesión es diferente porque cada persona es diferente. Me interesa entender quién sos antes de fotografiarte."
+    text: "Cada sesión se construye desde vos. Me interesa entender quién sos antes de fotografiarte."
 ---

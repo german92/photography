@@ -15,9 +15,9 @@ bio:
 
 values:
   - title: "Responsibility"
-    text: "I take care of everything photography-related from start to finish, so you can experience it with peace of mind."
+    text: "I take care of the entire photographic process from start to finish, so you can experience it with peace of mind."
   - title: "Authenticity"
-    text: "I don’t force moments or direct from empty poses. I work from what’s real, even if it’s imperfect."
+    text: "I photograph what actually happens, not what should happen. No forced poses or moments."
   - title: "Connection"
-    text: "Every session is different because every person is different. I’m interested in understanding who you are before photographing you."
+    text: "Every session is built around you. I’m interested in understanding who you are before photographing you."
 ---
