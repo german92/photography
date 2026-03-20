@@ -14,10 +14,10 @@ bio:
   - "Trabajo con luz natural y en locaciones que tengan sentido para cada persona o pareja. No tengo un estilo único de iluminación ni un set predeterminado — me adapto a cada historia."
 
 values:
-  - title: "Honestidad"
-    text: "Fotografío lo que realmente pasa, no lo que debería pasar. Sin poses fabricadas ni momentos construidos."
-  - title: "Presencia"
-    text: "Mi trabajo empieza mucho antes de apretar el obturador. Se trata de crear un ambiente donde la gente se olvide de la cámara."
+  - title: "Responsabilidad"
+    text: "Me hago cargo de todo lo fotográfico de principio a fin, para que puedas vivir la experiencia con tranquilidad.."
+  - title: "Autenticidad"
+    text: "No fuerzo momentos ni dirigir desde la pose vacía. Trabajo desde lo real, aunque sea imperfecto."
   - title: "Conexión"
     text: "Cada sesión es diferente porque cada persona es diferente. Me interesa entender quién sos antes de fotografiarte."
 ---

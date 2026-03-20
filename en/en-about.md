@@ -14,10 +14,10 @@ bio:
   - "I'm available for destination weddings throughout Costa Rica, Latin America, and internationally. If you're planning a wedding in Costa Rica or anywhere else in the world, I'd love to be part of your story."
 
 values:
-  - title: "Honesty"
-    text: "I photograph what's really happening, not what should be happening. No fabricated poses, no constructed moments."
-  - title: "Presence"
-    text: "My work starts long before pressing the shutter. It's about creating an atmosphere where people forget the camera is there."
+  - title: "Responsibility"
+    text: "I take care of everything photography-related from start to finish, so you can experience it with peace of mind."
+  - title: "Authenticity"
+    text: "I don’t force moments or direct from empty poses. I work from what’s real, even if it’s imperfect."
   - title: "Connection"
-    text: "Every session is different because every person is different. I'm interested in understanding who you are before photographing you."
+    text: "Every session is different because every person is different. I’m interested in understanding who you are before photographing you."
 ---
