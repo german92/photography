@@ -318,7 +318,7 @@ body {
 
 .contact__link {
   font-size: 0.82rem;
-  color: rgb(32, 69, 25) !important;
+  color: rgb(32, 69, 25);
   text-decoration: none;
   opacity: 0.6;
   display: flex;
@@ -1159,15 +1159,31 @@ body:has(.page-retratos) {
   .r-type__title { font-size: clamp(1.1rem, 1.6vw, 1.4rem); font-weight: 400; color: rgb(32, 69, 25); margin: 0; }
   .r-type__text { font-size: 0.85rem; line-height: 1.75; color: rgb(32, 69, 25); opacity: 0.55; margin: 0; padding-left: 38px; }
 
-  .r-featured { padding: 0 40px 80px; display: flex; flex-direction: column; gap: 8px; }
-  .r-featured__row { display: grid; gap: 8px; height: 480px; }
-  .r-featured__row--a { grid-template-columns: 1.6fr 1fr; }
-  .r-featured__row--b { grid-template-columns: 1fr 1.6fr; }
+  .r-featured { padding: 0 40px 80px; }
+
+  .r-featured__masonry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: masonry;
+    gap: 8px;
+    align-items: start;
+  }
 
   .r-featured__item {
     overflow: hidden;
-    img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.93); transition: transform 0.6s ease, filter 0.6s ease; }
-    &:hover img { transform: scale(1.03); filter: brightness(1); }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: brightness(0.93);
+      transition: transform 0.6s ease, filter 0.6s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.03);
+      filter: brightness(1);
+    }
   }
 
   .r-recent { padding: 80px 60px; border-top: 1px solid rgba(32, 69, 25, 0.08); }
@@ -1226,8 +1242,7 @@ body:has(.page-retratos) {
     .r-types__left { border-right: none; border-bottom: 1px solid rgba(32, 69, 25, 0.1); padding-right: 0; padding-bottom: 40px; margin-bottom: 40px; position: relative; top: 0; }
     .r-types__right { padding-left: 0; }
     .r-featured { padding: 0 16px 40px; }
-    .r-featured__row { grid-template-columns: 1fr; height: auto; }
-    .r-featured__item { height: 300px; }
+    .r-featured__masonry { grid-template-columns: repeat(2, 1fr); }
     .r-recent { padding: 60px 24px; &__grid { grid-template-columns: 1fr 1fr; } }
     .r-cta { padding: 80px 24px; }
   }

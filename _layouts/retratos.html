@@ -4,17 +4,17 @@ layout: base
 
 <div class="page-retratos">
 
-  <!-- HERO — split layout, image left + text right -->
+  <!-- HERO -->
   <section class="r-hero">
     <div class="r-hero__img-wrap">
       <img class="r-hero__img" src="{{ page.hero_image }}" alt="{{ page.description }}">
     </div>
     <div class="r-hero__content">
       <div class="r-hero__content-inner">
-        <p class="r-hero__eyebrow">Parejas · Familias · Embarazo · Profesional</p>
+        <p class="r-hero__eyebrow">Retratos · Familias · Embarazo · Profesional</p>
         <h1 class="r-hero__title">{{ page.title }}</h1>
         <p class="r-hero__statement">{{ page.statement }}</p>
-        <a class="r-hero__cta" href="{{ page.cta_link }}">Agendá tu sesión</a>
+        <a class="r-hero__cta" href="{{ page.cta_link }}">Reservá tu sesión</a>
       </div>
     </div>
   </section>
@@ -24,7 +24,7 @@ layout: base
     <blockquote class="r-quote__text">{{ page.quote }}</blockquote>
   </section>
 
-  <!-- EDITORIAL STRIP — full width scrolling images -->
+  <!-- STRIP -->
   <section class="r-strip r-fade">
     {% if page.strip_images %}
     {% for img in page.strip_images %}
@@ -40,14 +40,14 @@ layout: base
     <div class="r-manifesto__inner">
       <p class="r-manifesto__label">El enfoque</p>
       <p class="r-manifesto__text">{{ page.manifesto }}</p>
-      <a class="r-manifesto__link" href="{{ page.cta_link }}">Agendá tu sesión</a>
+      <a class="r-manifesto__link" href="{{ page.cta_link }}">Reservá tu sesión</a>
     </div>
     <div class="r-manifesto__img-wrap">
       <img src="{{ page.manifesto_image }}" alt="{{ page.description }}">
     </div>
   </section>
 
-  <!-- PORTRAIT TYPES — elegant list style -->
+  <!-- PORTRAIT TYPES -->
   <section class="r-types r-fade">
     <div class="r-types__left">
       <p class="r-types__label">Sesiones</p>
@@ -60,7 +60,7 @@ layout: base
           <span class="r-type__number">01</span>
           <h3 class="r-type__title">Retrato Individual</h3>
         </div>
-        <p class="r-type__text">Una sesión pensada para vos. Sin presión, sin poses forzadas. Busco mostrar tu esencia, esa que no siempre aparece en las fotos.</p>
+        <p class="r-type__text">Una sesión diseñada para vos. Sin presión, sin poses forzadas. Trabajo para mostrar tu esencia — la que generalmente no sale en las fotos.</p>
       </div>
 
       <div class="r-type">
@@ -68,7 +68,7 @@ layout: base
           <span class="r-type__number">02</span>
           <h3 class="r-type__title">Familias</h3>
         </div>
-        <p class="r-type__text">La dinámica real de tu familia: las risas, los gestos, la complicidad. No el retrato rígido con todos mirando a cámara, sino ese que te va a seguir emocionando con el tiempo.</p>
+        <p class="r-type__text">La dinámica real de tu familia — las risas, los gestos, la complicidad. No el retrato rígido con todos mirando a cámara, sino el que te va a emocionar en 20 años.</p>
       </div>
 
       <div class="r-type">
@@ -76,7 +76,7 @@ layout: base
           <span class="r-type__number">03</span>
           <h3 class="r-type__title">Embarazo</h3>
         </div>
-        <p class="r-type__text">Un momento que vale la pena documentar con sensibilidad. Sesiones íntimas, con luz natural, que acompañan este proceso sin artificios.</p>
+        <p class="r-type__text">Un momento único que merece ser documentado con sensibilidad. Sesiones íntimas, con luz natural, que celebran esta etapa sin artificios.</p>
       </div>
 
       <div class="r-type">
@@ -84,55 +84,66 @@ layout: base
           <span class="r-type__number">04</span>
           <h3 class="r-type__title">Profesional</h3>
         </div>
-        <p class="r-type__text">Headshots y retratos corporativos que comunican quién sos. Para LinkedIn, sitios web, prensa o lo que necesités.</p>
+        <p class="r-type__text">Headshots y retratos corporativos que comunican quién sos — no solo cómo te ves. Para LinkedIn, sitios web, prensa, o lo que necesités.</p>
       </div>
 
     </div>
   </section>
 
-  <!-- FEATURED GRID — alternating large/small -->
+  <!-- FEATURED — Masonry -->
   <section class="r-featured r-fade">
     {% if page.featured_images %}
-    <div class="r-featured__row r-featured__row--a">
-      <div class="r-featured__item r-featured__item--large">
-        <img src="{{ page.featured_images[0] }}" alt="{{ page.description }}">
+    <div class="r-featured__masonry" id="r-masonry">
+      {% for img in page.featured_images %}
+      <div class="r-featured__item">
+        <img src="{{ img }}" alt="{{ page.description }}" onload="masonryLayout()">
       </div>
-      <div class="r-featured__item r-featured__item--small">
-        <img src="{{ page.featured_images[1] }}" alt="{{ page.description }}">
-      </div>
-    </div>
-    <div class="r-featured__row r-featured__row--b">
-      <div class="r-featured__item r-featured__item--small">
-        <img src="{{ page.featured_images[2] }}" alt="{{ page.description }}">
-      </div>
-      <div class="r-featured__item r-featured__item--large">
-        <img src="{{ page.featured_images[3] }}" alt="{{ page.description }}">
-      </div>
+      {% endfor %}
     </div>
     {% endif %}
   </section>
 
-  <!-- RECENT PORTRAITS -->
-  <section class="r-recent r-fade">
-    <div class="r-recent__header">
-      <p class="r-recent__label">Sesiones recientes</p>
-    </div>
-    <div class="r-recent__grid">
-      {% assign portrait_posts = site.posts | where_exp: "p", "p.categories contains 'portrait'" %}
-      {% for post in portrait_posts limit: 6 %}
-      <a class="r-item" href="{{ post.url | relative_url }}">
-        <div class="r-item__img-wrap">
-          <img src="{{ post.thumbnail }}" alt="{{ post.title }} - German Ostaszynski retratos">
-        </div>
-        <p class="r-item__name">{{ post.title }}</p>
-        <p class="r-item__meta">{{ post.date | date: "%Y" }}</p>
-      </a>
-      {% endfor %}
-    </div>
+  <!-- CTA -->
+  <section class="r-cta r-fade">
+    <p class="r-cta__eyebrow">{{ page.cta_eyebrow }}</p>
+    <h2 class="r-cta__title">{{ page.cta_text }}</h2>
+    <a class="r-cta__btn" href="{{ page.cta_link }}">Escribime</a>
   </section>
 
-  <!-- CTA -->
-  {% include contact-form.html %}
+
+<script>
+function masonryLayout() {
+  const grid = document.getElementById('r-masonry');
+  if (!grid) return;
+  const items = Array.from(grid.querySelectorAll('.r-featured__item'));
+  const cols = window.innerWidth <= 810 ? 2 : 3;
+  const gap = 8;
+
+  // Reset
+  grid.style.position = 'relative';
+  items.forEach(item => {
+    item.style.position = 'absolute';
+    item.style.width = `calc((100% - ${gap * (cols - 1)}px) / ${cols})`;
+  });
+
+  const colHeights = Array(cols).fill(0);
+
+  items.forEach((item, i) => {
+    const col = colHeights.indexOf(Math.min(...colHeights));
+    const x = col * (item.offsetWidth + gap);
+    const y = colHeights[col];
+    item.style.left = x + 'px';
+    item.style.top = y + 'px';
+    colHeights[col] += item.offsetHeight + gap;
+  });
+
+  grid.style.height = Math.max(...colHeights) + 'px';
+}
+
+// Run after all images load
+window.addEventListener('load', masonryLayout);
+window.addEventListener('resize', masonryLayout);
+</script>
 
 </div>
 
@@ -144,7 +155,7 @@ layout: base
         observer.unobserve(e.target);
       }
     });
-  }, { threshold: 0.08 });
+  }, { threshold: 0.1 });
 
   document.querySelectorAll('.r-fade').forEach(el => observer.observe(el));
 </script>

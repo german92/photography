@@ -11,7 +11,7 @@ layout: base
     </div>
     <div class="r-hero__content">
       <div class="r-hero__content-inner">
-        <p class="r-hero__eyebrow">Couples · Families · Maternity · Professional</p>
+        <p class="r-hero__eyebrow">Portraits · Families · Maternity · Professional</p>
         <h1 class="r-hero__title">{{ page.title }}</h1>
         <p class="r-hero__statement">{{ page.statement }}</p>
         <a class="r-hero__cta" href="{{ page.cta_link }}">Book your session</a>
@@ -60,7 +60,7 @@ layout: base
           <span class="r-type__number">01</span>
           <h3 class="r-type__title">Individual Portrait</h3>
         </div>
-        <p class="r-type__text">A session designed just for you. No pressure, no forced poses. I focus on capturing your essence, the part of you that doesn’t always show up in photos.</p>
+        <p class="r-type__text">A session designed for you. No pressure, no forced poses. I work to show your essence — the one that usually doesn't come through in photos.</p>
       </div>
 
       <div class="r-type">
@@ -68,7 +68,7 @@ layout: base
           <span class="r-type__number">02</span>
           <h3 class="r-type__title">Families</h3>
         </div>
-        <p class="r-type__text">Your family as it really is: the laughter, the gestures, the connection. Not the stiff, everyone-looking-at-the-camera kind of portrait, but the one that will keep moving you over time</p>
+        <p class="r-type__text">The real dynamic of your family — the laughs, the gestures, the complicity. Not the stiff portrait with everyone staring at the camera, but the one that will move you in 20 years.</p>
       </div>
 
       <div class="r-type">
@@ -76,7 +76,7 @@ layout: base
           <span class="r-type__number">03</span>
           <h3 class="r-type__title">Maternity</h3>
         </div>
-        <p class="r-type__text">A moment worth documenting with sensitivity. Intimate sessions, using natural light, that honor this stage without artifice.</p>
+        <p class="r-type__text">A unique moment that deserves to be documented with sensitivity. Intimate sessions, with natural light, that celebrate this time without artifice.</p>
       </div>
 
       <div class="r-type">
@@ -84,49 +84,23 @@ layout: base
           <span class="r-type__number">04</span>
           <h3 class="r-type__title">Professional</h3>
         </div>
-        <p class="r-type__text">Headshots and corporate portraits that communicate who you are. For LinkedIn, websites, press, or whatever you need.</p>
+        <p class="r-type__text">Headshots and corporate portraits that communicate who you are — not just how you look. For LinkedIn, websites, press, or whatever you need.</p>
       </div>
 
     </div>
   </section>
 
-  <!-- FEATURED GRID -->
+  <!-- FEATURED — Masonry -->
   <section class="r-featured r-fade">
     {% if page.featured_images %}
-    <div class="r-featured__row r-featured__row--a">
-      <div class="r-featured__item r-featured__item--large">
-        <img src="{{ page.featured_images[0] }}" alt="{{ page.description }}">
+    <div class="r-featured__masonry" id="r-masonry">
+      {% for img in page.featured_images %}
+      <div class="r-featured__item">
+        <img src="{{ img }}" alt="{{ page.description }}" onload="masonryLayout()">
       </div>
-      <div class="r-featured__item r-featured__item--small">
-        <img src="{{ page.featured_images[1] }}" alt="{{ page.description }}">
-      </div>
-    </div>
-    <div class="r-featured__row r-featured__row--b">
-      <div class="r-featured__item r-featured__item--small">
-        <img src="{{ page.featured_images[2] }}" alt="{{ page.description }}">
-      </div>
-      <div class="r-featured__item r-featured__item--large">
-        <img src="{{ page.featured_images[3] }}" alt="{{ page.description }}">
-      </div>
-    </div>
-    {% endif %}
-  </section>
-
-  <!-- RECENT PORTRAITS -->
-  <section class="r-recent r-fade">
-    <p class="r-recent__label">Recent sessions</p>
-    <div class="r-recent__grid">
-      {% assign portrait_posts = site.posts | where_exp: "p", "p.categories contains 'portrait'" %}
-      {% for post in portrait_posts limit: 6 %}
-      <a class="r-item" href="{{ post.url | relative_url }}">
-        <div class="r-item__img-wrap">
-          <img src="{{ post.thumbnail }}" alt="{{ post.title }} - German Ostaszynski portraits">
-        </div>
-        <p class="r-item__name">{{ post.title }}</p>
-        <p class="r-item__meta">{{ post.date | date: "%Y" }}</p>
-      </a>
       {% endfor %}
     </div>
+    {% endif %}
   </section>
 
   <!-- CTA -->
@@ -135,6 +109,41 @@ layout: base
     <h2 class="r-cta__title">{{ page.cta_text }}</h2>
     <a class="r-cta__btn" href="{{ page.cta_link }}">Get in touch</a>
   </section>
+
+
+<script>
+function masonryLayout() {
+  const grid = document.getElementById('r-masonry');
+  if (!grid) return;
+  const items = Array.from(grid.querySelectorAll('.r-featured__item'));
+  const cols = window.innerWidth <= 810 ? 2 : 3;
+  const gap = 8;
+
+  // Reset
+  grid.style.position = 'relative';
+  items.forEach(item => {
+    item.style.position = 'absolute';
+    item.style.width = `calc((100% - ${gap * (cols - 1)}px) / ${cols})`;
+  });
+
+  const colHeights = Array(cols).fill(0);
+
+  items.forEach((item, i) => {
+    const col = colHeights.indexOf(Math.min(...colHeights));
+    const x = col * (item.offsetWidth + gap);
+    const y = colHeights[col];
+    item.style.left = x + 'px';
+    item.style.top = y + 'px';
+    colHeights[col] += item.offsetHeight + gap;
+  });
+
+  grid.style.height = Math.max(...colHeights) + 'px';
+}
+
+// Run after all images load
+window.addEventListener('load', masonryLayout);
+window.addEventListener('resize', masonryLayout);
+</script>
 
 </div>
 
