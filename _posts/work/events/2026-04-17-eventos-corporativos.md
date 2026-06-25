@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Eventos Internacionales
+title: Corporativo
 categories: work event birthdays
-thumbnail: "/assets/images/work/event/kosher-by-malka/Neon&Zusha-153 Large.jpeg"
-image: "/assets/images/work/event/kosher-by-malka/Neon&Zusha-153 Large.jpeg"
+thumbnail: "/assets/images/work/event/corporativo/CADENA-04.jpg"
+image: "/assets/images/work/event/corporativo/CADENA-04.jpg"
 description: "Fotografía profesional para cumpleaños por German Ostaszynski."
 ---
 
 
 <div class="photo-gallery" id="gallery">
-  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/work/event/kosher-by-malka'" %}
+  {% assign images = site.static_files | where_exp: "f", "f.path contains '/assets/images/work/event/corporativo'" %}
   {% for image in images %}
     <img 
       class="gallery-image hidden" 
@@ -20,8 +20,8 @@ description: "Fotografía profesional para cumpleaños por German Ostaszynski."
 
 
 <br>
-**Eventos Internacionales**<br>
-Fotografía profesional para eventos internacionales
+**Eventos y Retratos Corporativos**<br>
+Fotografía profesional para compañias y empresas.
 
 
 Evento. Digital. <br>
